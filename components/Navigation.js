@@ -1,12 +1,11 @@
 import styled from "styled-components"
 import Link from "next/link"
-import FlexDiv from "../helper-components/FlexContainer"
-
-import { tprimary, bprimary, bprimary_l1 } from "../styles/colors"
+import { Flex } from "../helper-components/Containers"
+import * as colors from "../styles/colors"
 
 const Nav = styled.nav`
 	/* height: 10rem; */
-	background-color: ${bprimary};
+	background-color: ${colors.black};
 `
 const NavLinks = styled.ul`
 	padding: 0.7rem;
@@ -15,18 +14,19 @@ const NavLinks = styled.ul`
 	grid-template-columns: 1fr auto;
 `
 const NavLink = styled.a`
+	font-size: 1.7rem;
 	cursor: pointer;
 	border: 0.1rem solid transparent;
-	color: ${tprimary};
+	color: ${colors.white};
 	padding: 0.7rem;
 	display: inline-block;
 	:hover {
-		background-color: ${bprimary_l1};
+		background-color: ${colors.gray};
 	}
 
 	:active {
 		transform: scale(1.02);
-		border: 0.1rem solid ${tprimary};
+		border: 0.1rem solid ${colors.white};
 	}
 `
 const NavHome = styled(NavLink)`
@@ -42,7 +42,7 @@ export default function Navigation() {
 						<NavHome>Justin Salas, AWP® AFP®</NavHome>
 					</Link>
 				</li>
-				<FlexDiv>
+				<Flex>
 					<li>
 						<Link href="/about">
 							<NavLink>ABOUT</NavLink>
@@ -53,7 +53,7 @@ export default function Navigation() {
 							<NavLink>CLIENT LOGIN</NavLink>
 						</Link>
 					</li>
-				</FlexDiv>
+				</Flex>
 			</NavLinks>
 		</Nav>
 	)

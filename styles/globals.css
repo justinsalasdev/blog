@@ -97,7 +97,10 @@ a {
 }
 
 body {
+	/* min-width: 100vw; */
+	overflow-x: hidden;
 	font-size: 1.5rem;
+	line-height: 1.25;
 	box-sizing: border-box;
 	font-family: "Quicksand";
 	-webkit-font-smoothing: antialiased;
