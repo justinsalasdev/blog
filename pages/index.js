@@ -2,16 +2,11 @@ import styled from "styled-components"
 import Navigation from "../components/Navigation"
 import Header_ from "../components/Header"
 import * as colors from "../styles/colors"
-import { Scroller } from "../helper-components/Containers"
+import { Scroller, Page } from "../helper-components/Containers"
 import Steps_ from "../components/Steps"
 import Components_ from "../components/Components"
+import Footer_ from "../components/Footer"
 
-const Page = styled.div`
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto 1fr auto;
-	min-height: 100vh;
-`
 const Main = styled.main`
 	display: grid;
 	grid-template-rows: 30rem auto 1fr auto;
@@ -62,7 +57,7 @@ export default function Home() {
 					<Components_ />
 				</Section2>
 			</Main>
-			<footer>Footer</footer>
+			<Footer_ />
 		</Page>
 	)
 }

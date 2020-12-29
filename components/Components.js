@@ -4,16 +4,17 @@ import * as colors from "../styles/colors"
 const Components = styled.ul`
 	/* background-color: ${colors.green}; */
 `
+const my = "4rem"
 
 const Component = styled.li`
 	background-color: ${colors.white1};
 	color: ${colors.black};
 	box-shadow: 0.4rem 0.4rem 0.8rem ${colors.shadow};
 	border-right: 4px double ${colors.black};
-	max-width: 200rem;
+	max-width: 110rem;
 	width: 85%;
 	/* height: 10rem; */
-	margin: 4rem auto;
+	margin: ${my} auto;
 	display: grid;
 	grid-template-columns: auto 1fr;
 
@@ -48,6 +49,11 @@ const Component = styled.li`
 		text-align: justify;
 	}
 `
+
+const Investment = styled(Component)``
+const Risk = styled(Component)``
+const Tax = styled(Component)``
+const Estate = styled(Component)``
 
 const Image = styled.img`
 	width: 30rem;
@@ -99,7 +105,7 @@ const Description = styled.p`
 export default function Components_() {
 	return (
 		<Components>
-			<Component>
+			<Investment>
 				<Image src="images/invest.jpg" />
 				<div>
 					<Title>Invesment Plan</Title>
@@ -118,8 +124,8 @@ export default function Components_() {
 						amount of risk you're willing to take for your investments.{" "}
 					</Description>
 				</div>
-			</Component>
-			<Component>
+			</Investment>
+			<Risk>
 				<Image2 src="images/insure.jpg" />
 				<div>
 					<Title>Risk and Insurance Plan</Title>
@@ -144,8 +150,8 @@ export default function Components_() {
 						situation - insurance planning is a great tool for that.
 					</Description>
 				</div>
-			</Component>
-			<Component>
+			</Risk>
+			<Tax>
 				<Image src="images/tax.jpg" />
 				<div>
 					<Title>Tax plan</Title>
@@ -159,8 +165,8 @@ export default function Components_() {
 						provisions to maximize income efficiency.{" "}
 					</Description>
 				</div>
-			</Component>
-			<Component>
+			</Tax>
+			<Estate>
 				<Image src="images/estate.jpg" />
 				<div>
 					<Title>Estate plan</Title>
@@ -175,7 +181,7 @@ export default function Components_() {
 						and many other problems can be avoided with a proper estate plan.{" "}
 					</Description>
 				</div>
-			</Component>
+			</Estate>
 		</Components>
 	)
 }

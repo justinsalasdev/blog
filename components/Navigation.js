@@ -38,7 +38,7 @@ export default function Navigation() {
 		<Nav>
 			<NavLinks>
 				<li>
-					<Link href="/about">
+					<Link href="/">
 						<NavHome>Justin Salas, AWP® AFP®</NavHome>
 					</Link>
 				</li>
