@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import Navigation from "../components/Navigation"
 import Header_ from "../components/Header"
-import * as colors from "../styles/colors"
 import { Scroller, Page } from "../helper-components/Containers"
 import Steps_ from "../components/Steps"
 import Components_ from "../components/Components"
@@ -15,26 +14,26 @@ const Main = styled.main`
 const Section = styled.section`
 	/* height: 30rem; */
 	/* clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%); */
-	background-color: ${colors.gray};
+	background-color: var(--gray);
 	display: grid;
-	padding: 1rem 0 1rem 0;
+	padding: 2rem 0 1rem 0;
 	grid-template-rows: auto 1fr;
 `
 
 const Section2 = styled(Section)`
-	padding-top: 4rem;
+	/* padding-top: 4rem; */
 	background-color: white;
 `
 
 const Section_title = styled.h2`
-	color: ${colors.white};
+	color: var(--white);
 	padding-bottom: 2rem;
 	margin-left: 1.5rem;
 	/* margin-bottom: 1rem; */
 `
 const Section_title2 = styled(Section_title)`
 	width: 70%;
-	color: ${colors.black};
+	color: var(--black);
 	padding-bottom: 1rem;
 `
 

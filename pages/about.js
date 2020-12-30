@@ -3,7 +3,6 @@ import Navigation from "../components/Navigation"
 import { Page } from "../helper-components/Containers"
 import { White, Blue2 } from "../helper-components/Highlights"
 import styled from "styled-components"
-import * as colors from "../styles/colors"
 
 const b_photo = "61.86em"
 
@@ -19,7 +18,7 @@ const Person = styled.section`
 	max-width: 120rem;
 	display: grid;
 	grid-template-columns: auto 1fr;
-	box-shadow: 0.2rem 0.2rem 0.8rem ${colors.shadow};
+	box-shadow: 0.2rem 0.2rem 0.8rem var(--shadow);
 
 	@media screen and (max-width: 100.93em) {
 		width: 95%;
@@ -92,13 +91,8 @@ const Credential = styled.li`
 `
 
 const Credential_rfp = styled(Credential)`
-	background-color: ${colors.white1};
-	/* outline: 1px solid ${colors.black}; */
-`
-
-const Credential_yrs = styled(Credential)`
-	background-color: #003a42;
-	color: ${colors.white};
+	background-color: var(--white1);
+	/* outline: 1px solid var(--black); */
 `
 
 const Credential_icon = styled.img`
@@ -111,7 +105,7 @@ const Credential_description = styled.div`
 `
 
 const Credential_src = styled.a`
-	color: ${props => (props.awp ? `${colors.blue4}` : `${colors.blue}`)};
+	color: ${props => (props.awp ? `var(--blue4)` : `var(--blue)`)};
 	display: block;
 	font-size: 1.5rem;
 `
@@ -126,7 +120,6 @@ export default function About_() {
 
 					<Description>
 						<Credentials>
-							<div></div>
 							<Credential_list>
 								<Credential>
 									<Credential_icon src="icons/wmc.png" />
@@ -151,12 +144,6 @@ export default function About_() {
 										</Credential_src>{" "}
 									</Credential_description>
 								</Credential_rfp>
-								{/* <Credential_yrs>
-									<Credential_description>
-										6 years of personal experience in debt and equity
-										investments
-									</Credential_description>
-								</Credential_yrs> */}
 							</Credential_list>
 						</Credentials>
 						<Description_prag>

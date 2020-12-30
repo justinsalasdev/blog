@@ -1,11 +1,10 @@
 import styled from "styled-components"
 import Link from "next/link"
 import { Flex } from "../helper-components/Containers"
-import * as colors from "../styles/colors"
 
 const Nav = styled.nav`
 	/* height: 10rem; */
-	background-color: ${colors.black};
+	background-color: var(--black);
 `
 const NavLinks = styled.ul`
 	padding: 0.7rem;
@@ -17,16 +16,16 @@ const NavLink = styled.a`
 	font-size: 1.7rem;
 	cursor: pointer;
 	border: 0.1rem solid transparent;
-	color: ${colors.white};
+	color: var(--white);
 	padding: 0.7rem;
 	display: inline-block;
 	:hover {
-		background-color: ${colors.gray};
+		background-color: var(--gray);
 	}
 
 	:active {
 		transform: scale(1.02);
-		border: 0.1rem solid ${colors.white};
+		border: 0.1rem solid var(--white);
 	}
 `
 const NavHome = styled(NavLink)`
@@ -50,7 +49,7 @@ export default function Navigation() {
 					</li>
 					<li>
 						<Link href="/login">
-							<NavLink>CLIENT LOGIN</NavLink>
+							<NavLink>LIBRARY</NavLink>
 						</Link>
 					</li>
 				</Flex>

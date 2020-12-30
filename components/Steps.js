@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import * as colors from "../styles/colors"
 
 const Cards = styled.ul`
 	margin: 0 auto;
@@ -13,7 +12,7 @@ const Cards = styled.ul`
 const Card = styled.li`
 	flex-shrink: 0;
 	flex-grow: 0;
-	background-color: ${colors.white};
+	background-color: var(--white);
 	width: 33rem;
 	overflow: hidden;
 `
@@ -21,7 +20,7 @@ const Card = styled.li`
 const Card_title = styled.h3`
 	height: 10rem;
 	padding: 1rem;
-	background-color: ${colors.orange2};
+	background-color: var(--orange2);
 	text-align: center;
 	span {
 		display: block;

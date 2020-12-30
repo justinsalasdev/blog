@@ -106,3 +106,29 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+:root {
+	--black: #1c1c1c;
+	--gray1: #363636;
+	--gray: #363636;
+
+	--white1: white;
+	--white: #f2f2f2;
+
+	--green: #00b259;
+	--green2: rgba(10, 209, 13, 0.4);
+
+	--orange: #d08b01;
+	--orange2: #ff9d00;
+
+	--blue4: #d4dcff;
+	--blue1: #757cff;
+	--blue2: #1026c9;
+	--blue: #405afe;
+	--blue3: #000740;
+
+	--indigo: #7028fe;
+
+	--shadow: rgba(84, 84, 84, 0.2);
+	--shadow1: rgba(84, 84, 84, 0.4);
+}
