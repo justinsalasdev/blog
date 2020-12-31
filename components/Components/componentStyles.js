@@ -60,9 +60,7 @@ const Description = styled.div`
 
 const Description_prag = styled.p`
 	padding-bottom: ${props => (props.expanded ? "5rem" : "0")};
-	line-height: 1.4;
 	text-indent: 4rem;
-	font-size: 1.8rem;
 	text-align: justify;
 `
 

@@ -14,7 +14,6 @@ const NavLinks = styled.ul`
 	}
 `
 const NavLink = styled.a`
-	font-size: 1.7rem;
 	cursor: pointer;
 	border: 0.1rem solid transparent;
 	color: var(--white);

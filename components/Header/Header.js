@@ -1,5 +1,6 @@
 import { Green, Orange } from "../../helper-components/Highlights"
 import Link from "next/link"
+import Head from "next/head"
 
 import {
 	Header,

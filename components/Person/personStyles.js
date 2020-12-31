@@ -24,6 +24,10 @@ const Picture = styled.img`
 	/* height: 30rem; */
 	object-fit: cover;
 
+	@media screen and (max-width: 78.33em) {
+		height: 55rem;
+	}
+
 	@media screen and (max-width: ${b_photo}) {
 		height: 30rem;
 		justify-self: center;
@@ -40,15 +44,14 @@ const Picture = styled.img`
 `
 
 const Description = styled.div`
-	font-size: 1.7rem;
-	border-left: 0.4rem double black;
+	/* border-left: 0.4rem double black; */
 	@media screen and (max-width: ${b_photo}) {
 		border: 0;
 	}
 `
 
 const Description_prag = styled.p`
-	padding: 0.5rem 1.5rem;
+	padding: 0.3rem 1.5rem;
 	text-align: justify;
 	text-indent: 3rem;
 	/* margin-bottom: 0.5rem; */
@@ -63,9 +66,9 @@ const Credential_list = styled.ul`
 	/* list-style: circle; */
 `
 const Credential = styled.li`
-	margin-bottom: 0.7rem;
+	/* margin-bottom: 0.7rem; */
 	background-color: #000740;
-	margin-bottom: 0.5rem;
+	/* margin-bottom: 0.5rem; */
 	/* padding: 1rem; */
 	height: 6rem;
 	display: grid;

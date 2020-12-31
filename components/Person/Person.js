@@ -49,7 +49,7 @@ export default function Person_() {
 					Justin Salas is an advocate of personal financial planning. In the
 					last 6 years, he has applied its principles to maintain and further
 					improve his financial wellness. He believes that only through holistic
-					plans can people truly find purpose for their hard earned money.
+					plans can people truly find purpose for their hard-earned money.
 				</Description_prag>
 				<Description_prag>
 					The fact that financial planning is not yet a popular nor attractive
@@ -60,6 +60,13 @@ export default function Person_() {
 					craft solutions for every unique client goals and situation. He
 					continues to improve his expertise on the subject to be able to always
 					provide sound and up to date recommendations to his clients.
+				</Description_prag>
+				<Description_prag>
+					He graduated Bachelor of Science in Electrical Engineering from Mapua
+					University. His curiosity and eagerness to explore new fields led him
+					to the acquisition of valuable knowledge and skills in finance,
+					computer hardware, networking, and web programming. He likes to read
+					books and play chess in his free time while enjoying a cup of tea.
 				</Description_prag>
 			</Description>
 		</Person>

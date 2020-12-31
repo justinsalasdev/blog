@@ -29,7 +29,6 @@ const Card_title = styled.h3`
 `
 const Card_description = styled.p`
 	height: 100%;
-	font-size: 1.7rem;
 	text-indent: 2rem;
 	padding: 1.5rem;
 	text-align: justify;
