@@ -31,23 +31,4 @@ const Header_link = styled.a`
 	}
 `
 
-const Header_action = styled.button`
-	outline: none;
-	color: var(--white);
-	padding: 0.7rem;
-	font-family: "Quicksand";
-	font-size: 1.6rem;
-	border: 0;
-	background-color: var(--green);
-	box-shadow: 0.4rem 0.4rem 0.8rem var(--shadow);
-	:active {
-		transform: translateY(0.1rem);
-		box-shadow: 0.2rem 0.2rem 0.4rem var(--shadow1);
-	}
-
-	:hover {
-		outline: 0.2rem solid var(--green2);
-	}
-`
-
-export { Header, Header_action, Header_link, Header_title }
+export { Header, Header_link, Header_title }

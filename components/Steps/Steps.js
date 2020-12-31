@@ -1,4 +1,11 @@
-import { Cards, Card, Card_title, Card_description } from "./stepsStyles"
+import {
+	Cards,
+	Card,
+	Card_title,
+	Card_description,
+	Card_action
+} from "./stepsStyles"
+import { PopupText } from "react-calendly"
 
 export default function Steps_() {
 	return (
@@ -13,6 +20,12 @@ export default function Steps_() {
 					and the set of expertise I possess to meet your expectations. How I'm
 					going to get compensated, will also be discussed.
 				</Card_description>
+				<Card_action>
+					<PopupText
+						text="Schedule meeting 📆"
+						url="https://calendly.com/justinsalas/financial-planning-intro"
+					/>
+				</Card_action>
 			</Card>
 			<Card>
 				<Card_title>
