@@ -1,10 +1,16 @@
 import styled from "styled-components"
-import Navigation from "../components/Navigation"
-import Header_ from "../components/Header"
-import { Scroller, Page } from "../helper-components/Containers"
-import Steps_ from "../components/Steps"
-import Components_ from "../components/Components"
-import Footer_ from "../components/Footer"
+import Navigation from "../components/Navigation/Navigation"
+import Header_ from "../components/Header/Header"
+import Steps_ from "../components/Steps/Steps"
+import Components_ from "../components/Components/Components"
+import Footer_ from "../components/Footer/Footer"
+
+export const Page = styled.div`
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+`
 
 const Main = styled.main`
 	display: grid;
@@ -21,7 +27,6 @@ const Section = styled.section`
 `
 
 const Section2 = styled(Section)`
-	/* padding-top: 4rem; */
 	background-color: white;
 `
 
@@ -35,6 +40,19 @@ const Section_title2 = styled(Section_title)`
 	width: 70%;
 	color: var(--black);
 	padding-bottom: 1rem;
+	margin-bottom: 2rem;
+	@media screen and (max-width: 51.4em) {
+		width: 50%;
+	}
+	@media screen and (max-width: 36.6em) {
+		width: 80%;
+	}
+`
+
+export const Scroller = styled.div`
+	width: 100%;
+	height: 100%;
+	overflow-x: scroll;
 `
 
 export default function Home() {

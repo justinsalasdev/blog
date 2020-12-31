@@ -1,127 +1,45 @@
-import { useState } from "react"
-import styled from "styled-components"
-import { Expander } from "../common/Buttons"
+import { useReducer } from "react"
+import {
+	Components,
+	Component,
+	Title,
+	Image,
+	Image2,
+	Description,
+	Description_prag,
+	Description_action
+} from "./componentStyles"
 
-const Components = styled.ul``
-const my = "4rem"
+const initialState = {
+	one: false,
+	two: false,
+	three: false,
+	four: false
+}
 
-const Component = styled.li`
-	position: relative;
-	background-color: var(--white1);
-	color: var(--black);
-	box-shadow: 0.4rem 0.4rem 0.8rem var(--shadow);
-	/* border-right: 4px double var(black); */
-	max-width: 110rem;
-	width: 85%;
-	height: 20rem;
-	margin: ${my} auto;
-	display: grid;
-	grid-template-columns: auto 1fr;
-
-	@media screen and (max-width: 160em) {
-		width: 95%;
+function reducer(state, action) {
+	switch (action.type) {
+		case "one":
+			return { ...state, one: !state.one }
+		case "two":
+			return { ...state, two: !state.two }
+		case "three":
+			return { ...state, three: !state.three }
+		case "four":
+			return { ...state, four: !state.four }
 	}
-
-	@media screen and (max-width: 62.66em) {
-		border-right: 0;
-		border-left: 4px double var(--black);
-
-		grid-template-columns: 1fr;
-		width: 70%;
-	}
-
-	@media screen and (max-width: 39em) {
-		grid-template-columns: 1fr;
-		width: 92%;
-	}
-
-	@media screen and (max-width: 29.8em) {
-		text-align: justify;
-	}
-`
-
-const Investment = styled(Component)``
-const Risk = styled(Component)``
-const Tax = styled(Component)``
-const Estate = styled(Component)``
-
-const Image = styled.img`
-	width: 30rem;
-	height: 100%;
-
-	/* height: 27rem; */
-	object-fit: cover;
-
-	/* @media screen and (max-width: 161em) {
-		height: 27rem;
-	}
-
-	@media screen and (max-width: 89em) {
-		height: 35rem;
-	}
-
-	@media screen and (max-width: 62.66em) {
-		width: 100%;
-		height: 20rem;
-	} */
-`
-
-const Image2 = styled(Image)`
-	/* @media screen and (max-width: 190.46em) {
-		height: 32rem;
-	}
-
-	@media screen and (max-width: 141.6em) {
-		height: 38rem;
-	}
-
-	@media screen and (max-width: 83em) {
-		height: 45rem;
-	}
-
-	@media screen and (max-width: 62.66em) {
-		width: 100%;
-		height: 20rem;
-	} */
-`
-
-const Title = styled.h3`
-	margin-bottom: 1rem;
-`
-
-const Description = styled.div`
-	padding: 1.5rem;
-	padding-bottom: 0;
-	margin-bottom: 5rem;
-	/* border-left: 4px double var(--black); */
-	color: rgba(0, 0, 0, 0);
-	background-image: linear-gradient(to bottom, black 55%, transparent);
-	background-clip: text;
-	-webkit-background-clip: text;
-	overflow: hidden;
-
-	@media screen and (max-width: 62.66em) {
-		border-left: 0;
-		border-top: 4px double var(--black);
-	}
-`
-
-const Description_prag = styled.p`
-	line-height: 1.4;
-	text-indent: 4rem;
-	font-size: 1.8rem;
-`
+}
 
 export default function Components_() {
-	const [expanded, expand] = useState(false)
-
+	const [state, dispatch] = useReducer(reducer, initialState)
+	const { one, two, three, four } = state
 	return (
 		<Components>
-			<Investment>
+			<Component expanded={one}>
 				<Image src="images/invest.jpg" />
-				<Description expanded={expanded}>
-					<Title onClick={() => expand(!expanded)}>Invesment Plan</Title>
-					<Description_prag>
+				<Description expanded={one}>
+					<Title>Invesment Plan</Title>
+					<Description_prag expanded={one}>
 						We often want to invest to have either capital gains or to have some
 						amount of extra income - but how much return on our investments do
 						we really need? What are these sought after gains really for?
@@ -135,12 +53,14 @@ export default function Components_() {
 						horizon, investable capital, adequate return on investment and the
 						amount of risk you're willing to take for your investments.{" "}
 					</Description_prag>
+					<Description_action onClick={() => dispatch({ type: "one" })}>
+						{one ? "Show less" : "Read more"}
+					</Description_action>
 				</Description>
-				<Expander>Read more</Expander>
-			</Investment>
-			<Risk>
+			</Component>
+			<Component expanded={two}>
 				<Image2 src="images/insure.jpg" />
-				<Description>
+				<Description expanded={two}>
 					<Title>Risk and Insurance Plan</Title>
 					<Description_prag>
 						To build wealth, we need to either maximize our revenue or minimize
@@ -150,7 +70,7 @@ export default function Components_() {
 						financial progress. Insurance is a great tool for managing risk -
 						who would want to pay for a huge medical bill with their own money?
 					</Description_prag>
-					<Description_prag>
+					<Description_prag expanded={two}>
 						The financial burden of risks like, death, disability, accident and
 						critical illness can be passed on to insurance companies by paying a
 						certain amount of premium - but how much are you willing to set
@@ -162,13 +82,16 @@ export default function Components_() {
 						adequacy and practicality appropriate to your current financial
 						situation - insurance planning is a great tool for that.
 					</Description_prag>
+					<Description_action onClick={() => dispatch({ type: "two" })}>
+						{two ? "Show less" : "Read more"}
+					</Description_action>
 				</Description>
-			</Risk>
-			<Tax>
+			</Component>
+			<Component expanded={three}>
 				<Image src="images/tax.jpg" />
-				<Description>
+				<Description expanded={three}>
 					<Title>Tax plan</Title>
-					<Description_prag>
+					<Description_prag expanded={three}>
 						Tax planning isn't about tax avoidance. Taxation fuels our economy -
 						it serves as our contribution to our nation's progress. We can't
 						avoid our taxes - and we should not. Though the government is strict
@@ -177,13 +100,16 @@ export default function Components_() {
 						synonymous to your business structure, we can maximize these
 						provisions to maximize income efficiency.{" "}
 					</Description_prag>
+					<Description_action onClick={() => dispatch({ type: "three" })}>
+						{three ? "Show less" : "Read more"}
+					</Description_action>
 				</Description>
-			</Tax>
-			<Estate>
+			</Component>
+			<Component expanded={four}>
 				<Image src="images/estate.jpg" />
-				<Description>
+				<Description expanded={four}>
 					<Title>Estate plan</Title>
-					<Description_prag>
+					<Description_prag expanded={four}>
 						Not a single day of our life is guaranteed. We are too busy building
 						our wealth that we forget to give little consideration of what
 						happens to our estate when we're gone. The seasoned estate planner
@@ -193,8 +119,11 @@ export default function Components_() {
 						members suing each other on court for unsettled inheritance. These,
 						and many other problems can be avoided with a proper estate plan.{" "}
 					</Description_prag>
+					<Description_action onClick={() => dispatch({ type: "four" })}>
+						{four ? "Show less" : "Read more"}
+					</Description_action>
 				</Description>
-			</Estate>
+			</Component>
 		</Components>
 	)
 }

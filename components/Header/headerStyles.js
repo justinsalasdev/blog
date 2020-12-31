@@ -1,8 +1,4 @@
 import styled from "styled-components"
-import { Green, Orange } from "../helper-components/Highlights"
-import Link from "next/link"
-import { GreenBtn } from "../common/Buttons"
-
 const Header = styled.header`
 	/* width: 50%; */
 	display: flex;
@@ -35,17 +31,23 @@ const Header_link = styled.a`
 	}
 `
 
-export default function Header_() {
-	return (
-		<Header>
-			<Header_title>
-				<Green>Planning</Green> makes it easier for you to make financial
-				decisions and keeps you on track to meet your <Orange>goals.</Orange>
-			</Header_title>
-			<Link href="/benefits">
-				<Header_link>More benefits of financial planning &rarr;</Header_link>
-			</Link>
-			<GreenBtn>Create your financial plan now</GreenBtn>
-		</Header>
-	)
-}
+const Header_action = styled.button`
+	outline: none;
+	color: var(--white);
+	padding: 0.7rem;
+	font-family: "Quicksand";
+	font-size: 1.6rem;
+	border: 0;
+	background-color: var(--green);
+	box-shadow: 0.4rem 0.4rem 0.8rem var(--shadow);
+	:active {
+		transform: translateY(0.1rem);
+		box-shadow: 0.2rem 0.2rem 0.4rem var(--shadow1);
+	}
+
+	:hover {
+		outline: 0.2rem solid var(--green2);
+	}
+`
+
+export { Header, Header_action, Header_link, Header_title }

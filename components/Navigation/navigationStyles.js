@@ -1,7 +1,4 @@
 import styled from "styled-components"
-import Link from "next/link"
-import { Flex } from "../helper-components/Containers"
-
 const Nav = styled.nav`
 	/* height: 10rem; */
 	background-color: var(--black);
@@ -11,6 +8,10 @@ const NavLinks = styled.ul`
 	display: grid;
 	align-items: center;
 	grid-template-columns: 1fr auto;
+
+	div {
+		display: flex;
+	}
 `
 const NavLink = styled.a`
 	font-size: 1.7rem;
@@ -32,28 +33,4 @@ const NavHome = styled(NavLink)`
 	font-weight: 700;
 `
 
-export default function Navigation() {
-	return (
-		<Nav>
-			<NavLinks>
-				<li>
-					<Link href="/">
-						<NavHome>Justin Salas, AWP® AFP®</NavHome>
-					</Link>
-				</li>
-				<Flex>
-					<li>
-						<Link href="/about">
-							<NavLink>ABOUT</NavLink>
-						</Link>
-					</li>
-					<li>
-						<Link href="/login">
-							<NavLink>LIBRARY</NavLink>
-						</Link>
-					</li>
-				</Flex>
-			</NavLinks>
-		</Nav>
-	)
-}
+export { Nav, NavLinks, NavLink, NavHome }

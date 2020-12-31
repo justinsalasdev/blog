@@ -1,16 +1,5 @@
-import styled from "styled-components"
-import { Blue1 } from "../helper-components/Highlights"
-
-const Footer = styled.footer`
-	text-align: center;
-	background-color: var(--black);
-	color: var(--white);
-	padding: 2rem;
-`
-
-const Message = styled.p`
-	padding: 0.2rem;
-`
+import { Blue1 } from "../../helper-components/Highlights"
+import { Footer, Message } from "./footerStyles"
 
 export default function Footer_() {
 	return (
