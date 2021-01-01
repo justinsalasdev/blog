@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { fromLeft } from "./headerAnimations"
 const Header = styled.header`
 	/* width: 50%; */
 	display: flex;
@@ -12,6 +13,8 @@ const Header_title = styled.div`
 	max-width: 80rem;
 	text-align: center;
 	margin-bottom: 2rem;
+	animation: ${fromLeft} 2s cubic-bezier(0, 1, 0, 1);
+	animation-fill-mode: backwards;
 	@media screen and (max-width: 50.46em) {
 		width: 90%;
 	}
@@ -28,6 +31,7 @@ const Header_link = styled.a`
 
 	:active {
 		color: var(--green);
+		transform: translateX(1rem);
 	}
 `
 

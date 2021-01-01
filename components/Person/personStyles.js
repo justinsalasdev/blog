@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import { fromLeft } from "./personAnimations"
+
 const b_photo = "61.86em"
 
 const Person = styled.section`
@@ -7,6 +9,11 @@ const Person = styled.section`
 	display: grid;
 	grid-template-columns: auto 1fr;
 	box-shadow: 0.2rem 0.2rem 0.8rem var(--shadow);
+	animation: ${fromLeft} 2s cubic-bezier(0, 1, 0, 1);
+	animation-fill-mode: backwards;
+	@media screen and (max-width: 50.46em) {
+		width: 90%;
+	}
 
 	@media screen and (max-width: 100.93em) {
 		width: 95%;
@@ -45,6 +52,7 @@ const Picture = styled.img`
 
 const Description = styled.div`
 	/* border-left: 0.4rem double black; */
+	padding-bottom: 1rem;
 	@media screen and (max-width: ${b_photo}) {
 		border: 0;
 	}
@@ -56,6 +64,20 @@ const Description_prag = styled.p`
 	text-indent: 3rem;
 	/* margin-bottom: 0.5rem; */
 	/* margin: 1rem; */
+`
+
+const Description_link = styled.a`
+	text-align: center;
+
+	color: var(--blue);
+	cursor: pointer;
+	:hover {
+		color: var(--blue2);
+	}
+
+	:active {
+		color: var(--green);
+	}
 `
 
 const Credentials = styled.div`
@@ -106,6 +128,7 @@ export {
 	Picture,
 	Description,
 	Description_prag,
+	Description_link,
 	Credentials,
 	Credential_list,
 	Credential,

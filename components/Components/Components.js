@@ -97,7 +97,7 @@ export default function Components_() {
 						avoid our taxes - and we should not. Though the government is strict
 						on it's mandate, it didn't fail to consider giving legal exemptions
 						and tax deduction opportunities. By employing tax strategies
-						synonymous to your business structure, we can maximize these
+						synonymous to your business structure, we can utilize these
 						provisions to maximize income efficiency.{" "}
 					</Description_prag>
 					<Description_action onClick={() => dispatch({ type: "three" })}>

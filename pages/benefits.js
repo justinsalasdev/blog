@@ -35,6 +35,7 @@ const Link = styled.a`
 	}
 
 	:active {
+		transform: translateX(1rem);
 		color: var(--green);
 	}
 `
@@ -66,7 +67,7 @@ const Paragraph = styled.p`
 	}
 `
 
-export default function About_() {
+export default function Benefits_() {
 	return (
 		<Page>
 			<Navigation />

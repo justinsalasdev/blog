@@ -55,7 +55,7 @@ export const Scroller = styled.div`
 	overflow-x: scroll;
 `
 
-export default function Home() {
+export default function Index_() {
 	return (
 		<Page>
 			<Navigation />

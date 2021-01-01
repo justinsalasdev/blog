@@ -10,24 +10,25 @@ import { PopupText } from "react-calendly"
 export default function Steps_() {
 	return (
 		<Cards>
-			<Card>
+			<Card delay={1}>
 				<Card_title>
 					<span>1️⃣</span>Get to know your advisor
 				</Card_title>
 				<Card_description>
-					By scheduling a short engagement, either in person or via online
-					meeting, I'll be able to give you an overview of financial planning
-					and the set of expertise I possess to meet your expectations. How I'm
-					going to get compensated, will also be discussed.
+					By scheduling a short online engagement, I'll be able to give you an
+					overview of the financial planning process. I will also get to
+					properly introduce myself as a professional so you'll have an idea if
+					my set of expertise will cater to your needs and expectations. How am
+					I going to get compensated will also be disclosed.
 				</Card_description>
 				<Card_action>
 					<PopupText
-						text="Schedule meeting 📆"
-						url="https://calendly.com/justinsalas/financial-planning-intro"
+						text="Schedule a meeting 📆"
+						url="https://calendly.com/justinsalas/plan-intro"
 					/>
 				</Card_action>
 			</Card>
-			<Card>
+			<Card delay={2}>
 				<Card_title>
 					<span>2️⃣</span>Decide if I'm the right professional for you.
 				</Card_title>
@@ -39,7 +40,7 @@ export default function Steps_() {
 					if we heedlessly began planning without addressing relevant concerns.
 				</Card_description>
 			</Card>
-			<Card>
+			<Card delay={3}>
 				<Card_title>
 					<span>3️⃣</span>Begin : Get relevant financial information
 				</Card_title>
@@ -50,7 +51,7 @@ export default function Steps_() {
 					understand your current financial situation.
 				</Card_description>
 			</Card>
-			<Card>
+			<Card delay={4}>
 				<Card_title>
 					<span>4️⃣</span>Develop a draft financial plan
 				</Card_title>
@@ -60,7 +61,7 @@ export default function Steps_() {
 					you may want or need to undertake.
 				</Card_description>
 			</Card>
-			<Card>
+			<Card delay={5}>
 				<Card_title>
 					<span>5️⃣</span>Implement financial plan
 				</Card_title>
@@ -74,7 +75,7 @@ export default function Steps_() {
 					informed choice.
 				</Card_description>
 			</Card>
-			<Card>
+			<Card delay={6}>
 				<Card_title>
 					<span>6️⃣</span>Review
 				</Card_title>

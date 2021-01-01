@@ -17,7 +17,7 @@ export default function Navigation() {
 						</Link>
 					</li>
 					<li>
-						<Link href="/login">
+						<Link href="/library">
 							<NavLink>LIBRARY</NavLink>
 						</Link>
 					</li>

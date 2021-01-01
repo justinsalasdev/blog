@@ -1,9 +1,12 @@
+import Link from "next/link"
+
 import { White, Blue2 } from "../../helper-components/Highlights"
 import {
 	Person,
 	Picture,
 	Description,
 	Description_prag,
+	Description_link,
 	Credentials,
 	Credential_list,
 	Credential,
@@ -54,19 +57,24 @@ export default function Person_() {
 				<Description_prag>
 					The fact that financial planning is not yet a popular nor attractive
 					undertaking, is not an obstacle for him to consistently reach out to
-					the people to introduce the financial planning process and its
-					benefits. Having a wide array of expertise that ranges from personal
-					finance to development and engineering, he is more than equipped to
-					craft solutions for every unique client goals and situation. He
-					continues to improve his expertise on the subject to be able to always
-					provide sound and up to date recommendations to his clients.
+					people to introduce the financial planning process and its benefits.
+					Having a wide array of expertise that ranges from personal finance to
+					development and engineering, he is more than equipped to craft
+					solutions for every unique client goals and situation. He continues to
+					improve his expertise on the subject to be able to always provide
+					sound and up to date recommendations to his clients.
 				</Description_prag>
 				<Description_prag>
 					He graduated Bachelor of Science in Electrical Engineering from Mapua
 					University. His curiosity and eagerness to explore new fields led him
 					to the acquisition of valuable knowledge and skills in finance,
 					computer hardware, networking, and web programming. He likes to read
-					books and play chess in his free time while enjoying a cup of tea.
+					books or play chess in his free time while enjoying a cup of tea.{" "}
+					<Link href="/library">
+						<Description_link>
+							Have a look at some of the books I like &rarr;
+						</Description_link>
+					</Link>
 				</Description_prag>
 			</Description>
 		</Person>
