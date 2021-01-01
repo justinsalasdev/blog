@@ -7,7 +7,7 @@ export default function Footer_() {
 			<Message>
 				Visit us on{" "}
 				<Blue1>
-					<a href="https://facebook.com" target="_blank">
+					<a href="https://facebook.com/justinsalasfinancials" target="_blank">
 						Facebook
 					</a>
 				</Blue1>
