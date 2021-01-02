@@ -16,10 +16,10 @@ export default function Steps_() {
 				</Card_title>
 				<Card_description>
 					By scheduling a short online engagement, I'll be able to give you an
-					overview of the financial planning process. I will also get to
-					properly introduce myself as a professional so you'll have an idea if
-					my set of expertise will cater to your needs and expectations. How am
-					I going to get compensated will also be disclosed.
+					overview of the financial planning. I will also get to properly
+					introduce myself as a professional so you'll get to decide if my set
+					of expertise will cater to your needs and expectations. How am I going
+					to get compensated will also be disclosed.
 				</Card_description>
 				<Card_action>
 					<PopupText
