@@ -57,24 +57,26 @@ export const Scroller = styled.div`
 
 export default function Index_() {
 	return (
-		<Page>
-			<Navigation />
-			<Main>
-				<Header_ />
-				<Section>
-					<Section_title>The Financial Planning Process</Section_title>
-					<Scroller>
-						<Steps_ />
-					</Scroller>
-				</Section>
-				<Section2>
-					<Section_title2>
-						Components that may be present in a Financial Plan
-					</Section_title2>
-					<Components_ />
-				</Section2>
-			</Main>
-			<Footer_ />
-		</Page>
+		<>
+			<Page>
+				<Navigation />
+				<Main>
+					<Header_ />
+					<Section>
+						<Section_title>The Financial Planning Process</Section_title>
+						<Scroller>
+							<Steps_ />
+						</Scroller>
+					</Section>
+					<Section2>
+						<Section_title2>
+							Components that may be present in a Financial Plan
+						</Section_title2>
+						<Components_ />
+					</Section2>
+				</Main>
+				<Footer_ />
+			</Page>
+		</>
 	)
 }
