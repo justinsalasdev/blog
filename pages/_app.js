@@ -6,16 +6,16 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<NextSeo
-				title="Justin Salas, AWP® AEPP®"
+				title="Justin Salas"
 				description="Financial Planner"
 				canonical="https://justinsalas.cc"
 				openGraph={{
 					url: "https://justinsalas.cc",
-					title: "Justin Salas, AWP® AEPP®",
+					title: "Justin Salas",
 					description: "Financial Planner",
 					images: [
 						{
-							url: "https://justinsalas.cc/images/target.png",
+							url: "https://justinsalas.cc/images/target2.png",
 							alt: "A depiction of financial goals"
 						}
 					],
