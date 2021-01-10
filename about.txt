@@ -61,3 +61,10 @@ something else must generate our income for us.
 
 
 This retirement overview tells us that there are lots of ways on how you can prepare for the longest vacation of your life.
+
+
+client ID
+861667344841-hudg0kns9748k31abs4ge2goko68gslk.apps.googleusercontent.com
+
+client secret
+sb0pAL4QQTw9IpClBrLIJKO7
