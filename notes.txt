@@ -58,7 +58,7 @@ something else must generate our income for us.
 	Retirement Capital - An asset that will yield sufficient periodic income to cover expenses.
 	Retirement Fund - An asset that, if consumed via periodic withdrawals, will be enough to cover planned retirement years.
 
-
+	
 
 This retirement overview tells us that there are lots of ways on how you can prepare for the longest vacation of your life.
 
@@ -68,3 +68,48 @@ client ID
 
 client secret
 sb0pAL4QQTw9IpClBrLIJKO7
+
+
+<li>Identity</li>
+[pli, plo,]
+salutation
+surname
+given name
+middle name
+other legal name/alias
+gender
+civil status
+date of birth
+place of birth
+TIN
+SSS
+GSIS
+
+
+<li>Contact Details</li>
+permanent address 
+permandent address zipcode
+present address -> same as permanent
+present address zipcode
+mobile number
+email address
+
+
+<li>Work Information</li>
+Name of Employer
+Nature of Business of Employer	
+Job Title
+Office Address
+
+
+
+<li>Business Information</li>
+Name of Business
+Nature of Business 
+Role 
+Business Address
+
+<li>Family Information</li>
+<li>Health Information</li>
+<li>Occupation</li>
+<li>Risk Profile</li>

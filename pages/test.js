@@ -8,12 +8,13 @@ export default function Page() {
 			{!session && (
 				<>
 					Not signed in <br />
-					<button onClick={signIn}>Sign in</button>
+					<button onClick={() => signIn("google")}>Sign in</button>
 				</>
 			)}
 			{session && (
 				<>
 					Signed in as {session.user.email} <br />
+					<pre>{JSON.stringify(session)}</pre>
 					<button onClick={signOut}>Sign out</button>
 				</>
 			)}

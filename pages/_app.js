@@ -1,6 +1,7 @@
 import "../styles/globals.css"
 import Head from "next/head"
 import { DefaultSeo } from "next-seo"
+import { Provider } from "next-auth/client"
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -26,7 +27,9 @@ function MyApp({ Component, pageProps }) {
 			<Head>
 				<link rel="icon" href="/icons/logo.png" type="image/png" />
 			</Head>
-			<Component {...pageProps} />
+			<Provider session={pageProps.session}>
+				<Component {...pageProps} />
+			</Provider>
 		</>
 	)
 }

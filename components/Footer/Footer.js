@@ -13,7 +13,7 @@ export default function Footer_() {
 				</Blue1>
 			</Message>
 			<Message>Email: plan@justinsalas.cc</Message>
-			<Message>© 2020 Justin Salas. Alright rights reserved</Message>
+			<Message>© 2020 Justin Salas. All rights reserved</Message>
 		</Footer>
 	)
 }
