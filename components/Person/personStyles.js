@@ -67,7 +67,7 @@ const Description_prag = styled.p`
 `
 
 const Description_link = styled.a`
-	text-align: center;
+	/* text-align: center; */
 
 	color: var(--blue);
 	cursor: pointer;

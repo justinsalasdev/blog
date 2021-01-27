@@ -5,7 +5,7 @@ export default function Footer_() {
 	return (
 		<Footer>
 			<Message>
-				Visit us on{" "}
+				Visit me on{" "}
 				<Blue1>
 					<a href="https://facebook.com/justinsalasfinancial" target="_blank">
 						Facebook

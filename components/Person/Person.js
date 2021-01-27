@@ -27,7 +27,7 @@ export default function Person_() {
 						<Credential>
 							<Credential_icon src="icons/wmc.png" />
 							<Credential_description>
-								<White>Associate Wealth and Estate Planner</White>
+								<White>Certified Wealth and Estate Planner</White>
 								<Credential_src
 									awp
 									href="https://www.wealthcenter.org/"
@@ -72,7 +72,7 @@ export default function Person_() {
 					books or play chess in his free time while enjoying a cup of tea.{" "}
 					<Link href="/library">
 						<Description_link>
-							Have a look at some of the books I like &rarr;
+							Have a look at some of the books that he likes &rarr;
 						</Description_link>
 					</Link>
 				</Description_prag>

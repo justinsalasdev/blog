@@ -17,7 +17,7 @@ export default function Navigation() {
 			<NavLinks>
 				<li>
 					<Link href="/">
-						<NavHome>{session ? "HOME" : "Justin Salas, AWP® AEPP®"}</NavHome>
+						<NavHome>{session ? "HOME" : "Justin Salas, CWP® CEPP®"}</NavHome>
 					</Link>
 				</li>
 
@@ -43,11 +43,11 @@ export default function Navigation() {
 						</li>
 					)}
 
-					<li>
+					{/* <li>
 						<NavLink onClick={setAction(session)}>
 							{session ? "LOGOUT" : "CLIENT LOGIN"}
 						</NavLink>
-					</li>
+					</li> */}
 				</div>
 			</NavLinks>
 		</Nav>
