@@ -40,18 +40,18 @@ export default function Components_() {
 				<Description expanded={one}>
 					<Title>Invesment Plan</Title>
 					<Description_prag expanded={one}>
-						We often want to invest to have either capital gains or to have some
-						amount of extra income - but how much return on our investments do
-						we need? What are these sought after gains really for? Investment
-						planning is the core component of a financial plan because it is
-						geared towards the achievement of your financial goals. This
-						suggests that our investments must have a clear purpose - but too
-						often our financial goals are qualitative e.g "I want to retire when
-						I'm rich" or "Someday, I want to live in a big house". My job as a
-						financial planner is to quantify these qualitative goals and craft
-						an investment plan which takes into account your goal horizon,
-						investable capital, adequate return on investment, and the amount of
-						risk you're willing to take for your investments.{" "}
+						We often want to invest to have either capital appreciation or to
+						have some amount of extra income - but how much return on our
+						investments do we need? What are these sought after gains really
+						for? Investment planning is the core component of a financial plan
+						because it is geared towards the achievement of your financial
+						goals. This suggests that our investments must have a clear purpose
+						- but too often our financial goals are qualitative e.g "I want to
+						retire when I'm rich" or "Someday, I want to live in a big house".
+						My job as a financial planner is to quantify these qualitative goals
+						and craft an investment plan which takes into account your goal
+						horizon, investable capital, adequate return on investment, and the
+						amount of risk you're willing to take for your investments.{" "}
 					</Description_prag>
 					<Description_action onClick={() => dispatch({ type: "one" })}>
 						{one ? "Show less" : "Read more"}
@@ -116,8 +116,9 @@ export default function Components_() {
 						Atty. Angelo M. Cabrera always says "He who deliberately leaves no
 						plan, plans chaos for his children". There's a lot of stories going
 						around about properties being eaten away by estate taxes and family
-						members suing each other in court for unsettled inheritance. These
-						and many other problems can be avoided with a proper estate plan.{" "}
+						members suing each other in court for unpartitioned inheritance.
+						These and many other problems can be avoided with a proper estate
+						plan.{" "}
 					</Description_prag>
 					<Description_action onClick={() => dispatch({ type: "four" })}>
 						{four ? "Show less" : "Read more"}

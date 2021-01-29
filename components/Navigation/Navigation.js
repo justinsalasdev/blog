@@ -17,7 +17,7 @@ export default function Navigation() {
 			<NavLinks>
 				<li>
 					<Link href="/">
-						<NavHome>{session ? "HOME" : "Justin Salas, CWP® CEPP®"}</NavHome>
+						<NavHome>{session ? "HOME" : "HOME"}</NavHome>
 					</Link>
 				</li>
 

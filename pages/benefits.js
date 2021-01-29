@@ -27,7 +27,7 @@ const Link = styled.a`
 	display: block;
 	text-align: center;
 	margin-bottom: 2rem;
-	font-size: 1.6rem;
+	font-size: 1.9rem;
 	color: var(--blue);
 	cursor: pointer;
 	:hover {

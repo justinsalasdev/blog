@@ -12,15 +12,20 @@ export default function Steps_() {
 		<Cards>
 			<Card delay={1}>
 				<Card_title>
-					<span>1️⃣</span>Get to know your advisor
+					<span>Pre-planning</span> Get an overview
 				</Card_title>
 				<Card_description>
-					By scheduling a short online engagement, I'll be able to give you an
-					overview of the financial planning. I will also get to properly
-					introduce myself as a professional so you'll get to decide if my set
-					of expertise will cater to your needs and expectations. How am I going
-					to get compensated will also be disclosed.
+					By scheduling a short online meeting, I'll be able to give you an
+					overview of financial planning and an introduction to the different
+					roles in the financial services industry.
 				</Card_description>
+				<Card_description>
+					I will also properly introduce myself as a professional so for you'll
+					have an idea about my set of expertise, responsibilities, and
+					limitations. How I'll be paid and how I'll be held accountable will
+					also be disclosed.
+				</Card_description>
+
 				<Card_action>
 					<PopupText
 						text="Schedule a meeting 📆"
@@ -30,54 +35,60 @@ export default function Steps_() {
 			</Card>
 			<Card delay={2}>
 				<Card_title>
-					<span>2️⃣</span>Decide if I'm the right professional for you.
+					<span>Pre-planning</span>Decide if I'm the right professional for you.
 				</Card_title>
 				<Card_description>
 					My set of expertise might not be the right fit for the goals you want
 					to achieve or the institutions I represent may not be of your personal
-					preference. In any case, by discussing these matters upfront, we'll be
-					able to save significant time and energy that could have been wasted
-					if we heedlessly began planning without addressing relevant concerns.
+					preference. You are not, in anyway, obliged to have me as your
+					financial professional.
+				</Card_description>
+				<Card_description>
+					In any case, I am grateful to have shared with you the unpopular yet
+					beneficial field of financial planning.
 				</Card_description>
 			</Card>
 			<Card delay={3}>
 				<Card_title>
-					<span>3️⃣</span>Begin : Get relevant financial information
+					<span>Step 1</span>Get relevant financial information
 				</Card_title>
 				<Card_description>
 					I can’t make a sound financial plan just like a doctor can’t prescribe
-					medicine to a patient they haven’t examined yet. Your role is to give
-					me the most accurate relevant data that I need to assess and
-					understand your current financial situation.
+					medicine to a patient they haven’t examined yet.
+				</Card_description>
+				<Card_description>
+					It is to your best interest to share to me, as accurate possible, all
+					relevant information that I need to assess and understand your current
+					financial situation.
 				</Card_description>
 			</Card>
 			<Card delay={4}>
 				<Card_title>
-					<span>4️⃣</span>Develop a draft financial plan
+					<span>Step 2</span>Develop financial plan
 				</Card_title>
 				<Card_description>
-					Taking into account your current financial standing and the goals you
-					want to achieve, I'll be able to construct sound recommendations that
-					you may want or need to undertake.
+					In this step, we'll collaborately design an action plan that you may
+					want or need to undertake to achieve your financial goals given your
+					current financial situation.
 				</Card_description>
 			</Card>
 			<Card delay={5}>
 				<Card_title>
-					<span>5️⃣</span>Implement financial plan
+					<span>Step 3</span>Implementation
 				</Card_title>
 				<Card_description>
-					Financial plans are useless if no actions are taken to make it happen.
-					Given the wide variety of financial instruments available, it can be
-					confusing most of the time to choose which one is adequate for your
-					goals. As a financial advisor, all I can do for you is to explain, to
-					the best of my ability, viable recommendations suitable to your
-					current financial standing - so you, and you alone, can make an
-					informed choice.
+					Given the wide variety of financial instruments available, finding the
+					right tools to put your financial plan into action can sometimes be a
+					daunting task.
+				</Card_description>
+				<Card_description>
+					As your financial advisor, I will explain, to the best of my ability,
+					viable options so you, and you alone, can make an informed choice.
 				</Card_description>
 			</Card>
 			<Card delay={6}>
 				<Card_title>
-					<span>6️⃣</span>Review
+					<span>Step ↺</span>Review
 				</Card_title>
 				<Card_description>
 					We can't have a complete picture of what your life is going to be like

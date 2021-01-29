@@ -3,11 +3,12 @@ import { fromBottom } from "./stepsAnimations"
 
 const Cards = styled.ul`
 	margin: 0 auto;
-	width: 210rem;
+	width: 220rem;
 	padding-bottom: 1rem;
 	/* background-color: blue; */
 	justify-content: space-evenly;
 	display: flex;
+	min-height: 57rem;
 `
 
 const Card = styled.li`
@@ -15,7 +16,7 @@ const Card = styled.li`
 	flex-shrink: 0;
 	flex-grow: 0;
 	background-color: var(--white);
-	width: 33rem;
+	width: 35rem;
 	overflow: hidden;
 	animation: ${fromBottom} 0.3s cubic-bezier(0, 1, 0, 1);
 	animation-fill-mode: backwards;
@@ -25,20 +26,33 @@ const Card = styled.li`
 `
 
 const Card_title = styled.h3`
-	height: 11rem;
-	padding: 1rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	height: 12rem;
+	padding: 1.5rem;
 	background-color: var(--orange2);
 	text-align: center;
+
+	/* color: var(--white); */
 	span {
 		display: block;
-		margin-bottom: 1rem;
+		/* margin-bottom: 1rem; */
+		font-weight: 400;
+		/* color: var(--black); */
 	}
 `
 const Card_description = styled.p`
 	/* height: 100%; */
 	text-indent: 2rem;
-	padding: 1.5rem;
-	text-align: justify;
+	padding: 1.5rem 1.5rem 0 1.5rem;
+	text-align: center;
+
+	/* word-break: break-all; */
+	:not(:first-of-type) {
+		padding-top: 1rem;
+	}
 `
 
 const Card_action = styled.div`
@@ -51,8 +65,8 @@ const Card_action = styled.div`
 	bottom: 1.2rem;
 	outline: none;
 	color: var(--white);
-	padding: 0.8rem;
-	font-family: "Quicksand";
+	padding: 1.2rem;
+	font-family: "Josefin Sans";
 	font-size: 1.6rem;
 	border: 0;
 	background-color: var(--green);

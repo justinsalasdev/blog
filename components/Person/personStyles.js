@@ -4,20 +4,13 @@ import { fromLeft } from "./personAnimations"
 const b_photo = "61.86em"
 
 const Person = styled.section`
-	width: 60%;
-	max-width: 120rem;
+	width: 95%;
+	max-width: 130rem;
 	display: grid;
 	grid-template-columns: auto 1fr;
 	box-shadow: 0.2rem 0.2rem 0.8rem var(--shadow);
 	animation: ${fromLeft} 2s cubic-bezier(0, 1, 0, 1);
 	animation-fill-mode: backwards;
-	@media screen and (max-width: 50.46em) {
-		width: 90%;
-	}
-
-	@media screen and (max-width: 100.93em) {
-		width: 95%;
-	}
 
 	@media screen and (max-width: ${b_photo}) {
 		grid-template-columns: 1fr;
@@ -31,8 +24,8 @@ const Picture = styled.img`
 	/* height: 30rem; */
 	object-fit: cover;
 
-	@media screen and (max-width: 78.33em) {
-		height: 55rem;
+	@media screen and (max-width: 90em) {
+		height: 60rem;
 	}
 
 	@media screen and (max-width: ${b_photo}) {

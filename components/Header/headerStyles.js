@@ -8,7 +8,7 @@ const Header = styled.header`
 	justify-content: center;
 `
 const Header_title = styled.div`
-	font-size: 2.3rem;
+	font-size: 2.8rem;
 	width: 70%;
 	max-width: 80rem;
 	text-align: center;
@@ -22,7 +22,7 @@ const Header_title = styled.div`
 const Header_link = styled.a`
 	text-align: center;
 	margin-bottom: 2rem;
-	font-size: 1.8rem;
+	font-size: 2rem;
 	color: var(--blue);
 	cursor: pointer;
 	:hover {

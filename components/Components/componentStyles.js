@@ -46,7 +46,7 @@ const Title = styled.h3`
 
 const Description = styled.div`
 	position: relative;
-	padding: 1.5rem;
+	padding: 2.3rem;
 	padding-bottom: 0;
 	color: ${props => (props.expanded ? `var(--black)` : "rgba(0, 0, 0, 0)")};
 	background-image: ${props =>
