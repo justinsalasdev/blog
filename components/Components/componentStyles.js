@@ -10,7 +10,7 @@ const Components = styled.ul`
 const Component = styled.li`
 	background-color: var(--white1);
 	color: var(--black);
-	box-shadow: 0.4rem 0.4rem 0.8rem var(--shadow);
+
 	max-width: 110rem;
 	width: 85%;
 	height: ${props => (props.expanded ? "auto" : "17rem")};
@@ -73,7 +73,7 @@ const Description_action = styled.button`
 	outline: none;
 	color: var(--blue);
 	padding: 0.7rem;
-	font-family: "Quicksand";
+	font-family: "Josefin Sans";
 	font-size: 1.5rem;
 	border: 0;
 	background-color: white;
