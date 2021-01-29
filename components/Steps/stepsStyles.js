@@ -8,7 +8,7 @@ const Cards = styled.ul`
 	/* background-color: blue; */
 	justify-content: space-evenly;
 	display: flex;
-	min-height: 57rem;
+	min-height: 52rem;
 `
 
 const Card = styled.li`
