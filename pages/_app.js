@@ -25,6 +25,7 @@ function MyApp({ Component, pageProps }) {
 				}}
 			/>
 			<Head>
+				<meta property="fb:pages" content="104341648247975" />
 				<link rel="icon" href="/icons/logo.png" type="image/png" />
 			</Head>
 			<Provider session={pageProps.session}>
