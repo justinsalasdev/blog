@@ -5,6 +5,7 @@ const Components = styled.ul`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	/* justify-content: space-around; */
 `
 
 const Component = styled.li`
@@ -13,8 +14,8 @@ const Component = styled.li`
 
 	max-width: 110rem;
 	width: 85%;
-	height: ${props => (props.expanded ? "auto" : "17rem")};
-	margin-bottom: 3rem;
+	height: ${props => (props.expanded ? "auto" : "20rem")};
+	margin-bottom: 1rem;
 	display: grid;
 	grid-template-columns: auto 1fr;
 
@@ -52,7 +53,7 @@ const Description = styled.div`
 	background-image: ${props =>
 		props.expanded
 			? "none"
-			: "linear-gradient(to bottom, black 55%, transparent)"};
+			: "linear-gradient(to bottom, black 60%, transparent)"};
 	background-clip: text;
 	-webkit-background-clip: text;
 	overflow: hidden;

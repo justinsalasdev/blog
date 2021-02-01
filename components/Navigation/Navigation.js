@@ -1,8 +1,17 @@
 import Link from "next/link"
-import { Nav, NavLinks, NavLink, NavHome } from "./navigationStyles"
+import {
+	NavBar,
+	Nav,
+	NavLinks,
+	NavLink,
+	NavHome,
+	NavMenu
+} from "./navigationStyles"
 import { signIn, signOut, useSession } from "next-auth/client"
+import { useState } from "react"
 
 export default function Navigation() {
+	const [navShown, showNav] = useState("false")
 	const [session, loading] = useSession()
 	const setAction = session => () => {
 		if (session) {
@@ -12,44 +21,60 @@ export default function Navigation() {
 		}
 	}
 
-	return (
-		<Nav>
-			<NavLinks>
-				<li>
-					<Link href="/">
-						<NavHome>{session ? "HOME" : "HOME"}</NavHome>
-					</Link>
-				</li>
+	console.log(navShown)
 
-				<div>
-					{session && (
-						<li>
-							<Link href="/user/dashboard">
-								<NavLink>DASHBOARD</NavLink>
-							</Link>
-						</li>
-					)}
+	return (
+		<NavBar shown={navShown}>
+			<Nav shown={navShown}>
+				<NavLinks shown={navShown}>
 					<li>
-						<Link href={session ? "/user/profile" : "/about"}>
-							<NavLink>{session ? "PROFILE" : "ABOUT"}</NavLink>
+						<Link href="/">
+							<NavHome>{session ? "HOME" : "HOME"}</NavHome>
 						</Link>
 					</li>
 
-					{!session && (
+					<div>
+						{session && (
+							<li>
+								<Link href="/user/dashboard">
+									<NavLink>DASHBOARD</NavLink>
+								</Link>
+							</li>
+						)}
 						<li>
-							<Link href="/library">
-								<NavLink>LIBRARY</NavLink>
+							<Link href={session ? "/user/profile" : "/about"}>
+								<NavLink>{session ? "PROFILE" : "ABOUT"}</NavLink>
 							</Link>
 						</li>
-					)}
 
-					{/* <li>
+						{!session && (
+							<li>
+								<Link href="/library">
+									<NavLink>LIBRARY</NavLink>
+								</Link>
+							</li>
+						)}
+						{/* <li>
+							<Link href="/library">
+								<NavLink>ARTICLES</NavLink>
+							</Link>
+						</li> */}
+
+						{/* <li>
 						<NavLink onClick={setAction(session)}>
 							{session ? "LOGOUT" : "CLIENT LOGIN"}
 						</NavLink>
 					</li> */}
-				</div>
-			</NavLinks>
-		</Nav>
+					</div>
+				</NavLinks>
+			</Nav>
+			<NavMenu
+				shown={navShown}
+				type="button"
+				onClick={() => showNav(!navShown)}
+			>
+				{navShown ? "HIDE MENU" : "SHOW MENU"}
+			</NavMenu>
+		</NavBar>
 	)
 }
