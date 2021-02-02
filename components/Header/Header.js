@@ -10,7 +10,7 @@ export default function Header_() {
 				<Green>Planning</Green> makes it easier for you to make financial
 				decisions and keeps you on track to meet your <Orange>goals.</Orange>
 			</Header_title>
-			<Link href="/benefits">
+			<Link href="/articles/benefits">
 				<Header_link>More benefits of financial planning &rarr;</Header_link>
 			</Link>
 		</Header>
