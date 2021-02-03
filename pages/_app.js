@@ -4,9 +4,14 @@ import { Provider } from "next-auth/client"
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<Provider session={pageProps.session}>
-			<Component {...pageProps} />
-		</Provider>
+		<>
+			<Head>
+				<link rel="icon" href="icons/logo.jpg" type="image/png" />
+			</Head>
+			<Provider session={pageProps.session}>
+				<Component {...pageProps} />
+			</Provider>
+		</>
 	)
 }
 
