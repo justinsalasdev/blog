@@ -58,9 +58,30 @@ export const Scroller = styled.div`
 	overflow-x: scroll;
 `
 
+const seoImageUrl =
+	"https://drive.google.com/file/d/19bP-uh96dwwwodmWjykQ0InAJ5s1ENSq/view?usp=sharing"
+
+const seoDescription = "Financial Planner"
+
 export default function Index_() {
 	return (
 		<>
+			<NextSeo
+				title="Justin Salas"
+				description={seoDescription}
+				canonical="https://justinsalas.cc"
+				openGraph={{
+					url: "https://justinsalas.cc",
+					title: "Justin Salas",
+					description: seoDescription,
+					images: [
+						{
+							url: seoImageUrl,
+							alt: "Mountain camps"
+						}
+					]
+				}}
+			/>
 			<Page>
 				<Navigation />
 				<Main>
