@@ -6,8 +6,7 @@ import { Provider } from "next-auth/client"
 const seoImage =
 	"https://drive.google.com/file/d/19bP-uh96dwwwodmWjykQ0InAJ5s1ENSq/view?usp=sharing"
 
-const seoDescription =
-	"The financial professional who will help you maximize your potential to achieve life goals through quality collaborative financial planning process"
+const seoDescription = "cFinancial Planner"
 
 function MyApp({ Component, pageProps }) {
 	return (

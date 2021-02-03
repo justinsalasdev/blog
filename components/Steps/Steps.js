@@ -20,10 +20,10 @@ export default function Steps_() {
 					roles in the financial services industry.
 				</Card_description>
 				<Card_description>
-					I will also properly introduce myself as a professional so for you'll
-					have an idea about my set of expertise, responsibilities, and
-					limitations. How I'll be paid and how I'll be held accountable will
-					also be disclosed.
+					I will also properly introduce myself as a professional so you'll have
+					an idea about my set of expertise, responsibilities, and limitations.
+					How I'll be paid and how I'll be held accountable will also be
+					disclosed.
 				</Card_description>
 
 				<Card_action>

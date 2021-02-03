@@ -15,7 +15,7 @@ const Component = styled.li`
 	max-width: 110rem;
 	width: 85%;
 	height: ${props => (props.expanded ? "auto" : "20rem")};
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	display: grid;
 	grid-template-columns: auto 1fr;
 
@@ -77,7 +77,7 @@ const Description_action = styled.button`
 	font-family: "Josefin Sans";
 	font-size: 1.5rem;
 	border: 0;
-	background-color: white;
+	background-color: var(--white1);
 	/* box-shadow: 0.4rem 0.4rem 0.8rem var(--shadow); */
 	:active {
 		color: var(--green);
