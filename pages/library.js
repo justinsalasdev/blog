@@ -27,7 +27,9 @@ const Books = styled.ul`
 
 	height: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(min(25rem, 100%), 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+	align-items: center;
+	grid-auto-flow: row dense;
 `
 
 const fromLeft = keyframes`
@@ -42,37 +44,21 @@ const fromLeft = keyframes`
     }
 `
 const Book = styled.li`
-	/* border: 4px double var(--black); */
-	height: 32rem;
 	margin: 1rem;
 	box-shadow: 0.2rem 0.2rem 0.8rem var(--shadow);
 
 	animation: ${fromLeft} 2s cubic-bezier(0, 1, 0, 1);
-	/* animation-duration: 2s;
-	animation-timing-function: cubic-bezier(0, 1, 0, 1); */
+
 	animation-fill-mode: backwards;
 	animation-delay: ${props => {
 		return `${props.delay / 10}s`
 	}};
-
-	@media screen and (max-width: ${four}) {
-		height: 36rem;
-	}
-	@media screen and (max-width: ${three}) {
-		height: 40rem;
-	}
-	@media screen and (max-width: ${two}) {
-		height: 42rem;
-	}
-	@media screen and (max-width: ${one}) {
-		height: 45rem;
-	}
 `
 
 const Cover = styled.img`
 	display: block;
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 	object-fit: stretch;
 	:hover {
 		background-color: green;
