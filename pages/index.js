@@ -4,6 +4,7 @@ import Header_ from "../components/Header/Header"
 import Steps_ from "../components/Steps/Steps"
 import Components_ from "../components/Components/Components"
 import Footer_ from "../components/Footer/Footer"
+import { NextSeo } from "next-seo"
 
 export const Page = styled.div`
 	display: grid;
