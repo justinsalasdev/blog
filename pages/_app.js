@@ -23,6 +23,8 @@ function MyApp({ Component, pageProps }) {
 					images: [
 						{
 							url: seoImage,
+							width: 800,
+							height: 600,
 							alt: "A symbol of financial journey"
 						}
 					],
