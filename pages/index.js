@@ -59,7 +59,7 @@ export const Scroller = styled.div`
 	overflow-x: scroll;
 `
 
-const seoImageUrl = "https://justinsalas.cc/images/seo/default.jpg"
+const seoImageUrl = "https://justinsalas.cc/images/seo/default.png"
 const seoDescription = "Financial Planner"
 
 export default function Index_() {
