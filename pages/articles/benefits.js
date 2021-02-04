@@ -46,10 +46,12 @@ export default function Benefits_() {
 							You’ll have confidence in your investment decisions
 						</Heading>
 						<Paragraph>
-							Because a financial plan helps you quantify goals and helps you
-							lay out the steps that need to be done to achieve them, you won’t
-							have any hard time picking the right financial instrument - the
-							one best suited for the goals you want to achieve.
+							Once a financial plan has been laid out, the implementation
+							requirements can be easily determined. Choosing the best financial
+							instrument that can put your plan into action is not a daunting
+							task anymore. Your financial planner will explain to you, to the
+							best of his ability the best options available, so you can make an
+							informed choice.
 						</Paragraph>
 					</Point>
 
@@ -59,9 +61,9 @@ export default function Benefits_() {
 							Sometimes, we are worried that we might be overspending on
 							something or we might not be saving enough. Having a complete
 							picture of how your resources are currently allocated to your
-							different financial goals, you’ll have peace of mind when you make
-							spending decisions. A financial plan doesn’t restrict our spending
-							- it just shows us the consequences of our decisions.
+							different financial goals, you’ll immediately know the
+							consequences of your spending decision - not to restrict it, but
+							rather have it without any worries.
 						</Paragraph>
 					</Point>
 
