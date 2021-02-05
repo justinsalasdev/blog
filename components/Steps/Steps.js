@@ -54,7 +54,7 @@ export default function Steps_() {
 				</Card_title>
 				<Card_description>
 					I can’t make a sound financial plan just like a doctor can’t prescribe
-					medicine to a patient they haven’t examined yet.
+					treatment to a patient they haven’t examined yet.
 				</Card_description>
 				<Card_description>
 					It is to your best interest to share to me, as accurate possible, all
