@@ -88,12 +88,18 @@ export default function Steps_() {
 			</Card>
 			<Card delay={6}>
 				<Card_title>
-					<span>Step ↺</span>Review
+					<span>Step ↺</span>Monitoring, management and review
 				</Card_title>
 				<Card_description>
-					We can't have a complete picture of what your life is going to be like
-					in the future. Adaptive changes to the plan must be made as you
-					progress through the different chapters of your life.
+					Investment performance must be periodically monitored to see
+					reallocation opportunities or rebalancing requirements. This is to
+					ensure that the portfolio is on point to the investment objectives and
+					is not exposed to unnecessary additional risks.
+				</Card_description>
+				<Card_description>
+					Moreover, we can't have a complete picture of what your life is going
+					to be like in the future. Adaptive changes to the plan must be made as
+					you progress through the different chapters of your life.
 				</Card_description>
 			</Card>
 		</Cards>
