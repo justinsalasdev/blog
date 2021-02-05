@@ -44,7 +44,7 @@ export default function Steps_() {
 					financial professional.
 				</Card_description>
 				<Card_description>
-					In any case, I am grateful to have shared with you the unpopular yet
+					In any case, I am grateful to have introduced to you the unpopular yet
 					beneficial field of financial planning.
 				</Card_description>
 			</Card>
