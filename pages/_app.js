@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				<link rel="icon" href="icons/logo.jpg" type="image/png" />
+				<link rel="icon" href="icons/logo.png" type="image/png" />
 			</Head>
 			<Provider session={pageProps.session}>
 				<Component {...pageProps} />
