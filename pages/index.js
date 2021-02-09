@@ -15,7 +15,7 @@ export const Page = styled.div`
 
 const Main = styled.main`
 	display: grid;
-	grid-template-rows: 30rem auto 1fr auto;
+	grid-template-rows: 40rem auto 1fr auto;
 `
 
 const Section = styled.section`
@@ -59,24 +59,25 @@ export const Scroller = styled.div`
 	overflow-x: scroll;
 `
 
-const seoImageUrl = "https://justinsalas.cc/images/seo/default.png"
+const seoImageUrl = "https://planopilipino.com/images/seo/default.png"
 const seoDescription = "Financial Planner"
+const seoTitle = "Plano Pilipino"
 
 export default function Index_() {
 	return (
 		<>
 			<NextSeo
-				title="Justin Salas"
+				title={seoTitle}
 				description={seoDescription}
-				canonical="https://justinsalas.cc"
+				canonical="https://planopilipino.com"
 				openGraph={{
-					url: "https://justinsalas.cc",
-					title: "Justin Salas",
+					url: "https://planopilipino.com",
+					title: seoTitle,
 					description: seoDescription,
 					images: [
 						{
 							url: seoImageUrl,
-							alt: "Financial planning"
+							alt: "A financial planner in blue"
 						}
 					]
 				}}

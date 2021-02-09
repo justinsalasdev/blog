@@ -5,15 +5,15 @@ export default function Footer_() {
 	return (
 		<Footer>
 			<Message>
-				Visit me on{" "}
+				Visit us on{" "}
 				<Blue1>
-					<a href="https://facebook.com/justinsalasfinancial" target="_blank">
+					<a href="https://facebook.com/planopilipino" target="_blank">
 						Facebook
 					</a>
 				</Blue1>
 			</Message>
-			<Message>Email: plan@justinsalas.cc</Message>
-			<Message>© 2020 Justin Salas. All rights reserved</Message>
+			<Message>Email: planopilino@gmail.com</Message>
+			<Message>© 2020 Plano Pilipino. All rights reserved</Message>
 		</Footer>
 	)
 }

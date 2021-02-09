@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const bp = "3.33em"
+const bp = "27.33em"
 
 const NavBar = styled.div`
 	position: relative;
@@ -25,7 +25,6 @@ const NavLinks = styled.ul`
 
 	div {
 		display: flex;
-		/* flex-direction: row; */
 	}
 
 	@media screen and (max-width: ${bp}) {
@@ -56,8 +55,12 @@ const NavLink = styled.a`
 		border: 0.1rem solid var(--white);
 	}
 `
-const NavHome = styled(NavLink)`
-	font-weight: 700;
+const NavHome = styled.img`
+	display: block;
+	width: 20rem;
+	margin: 1rem;
+	cursor: pointer;
+	/* background-color: white; */
 `
 
 const NavMenu = styled.button`

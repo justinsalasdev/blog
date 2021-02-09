@@ -21,15 +21,13 @@ export default function Navigation() {
 		}
 	}
 
-	console.log(navShown)
-
 	return (
 		<NavBar shown={navShown}>
 			<Nav shown={navShown}>
 				<NavLinks shown={navShown}>
 					<li>
 						<Link href="/">
-							<NavHome>{session ? "HOME" : "HOME"}</NavHome>
+							<NavHome src="icons/logo.svg" />
 						</Link>
 					</li>
 
@@ -43,7 +41,7 @@ export default function Navigation() {
 						)}
 						<li>
 							<Link href={session ? "/user/profile" : "/about"}>
-								<NavLink>{session ? "PROFILE" : "ABOUT"}</NavLink>
+								<NavLink>{session ? "PROFILE" : "ABOUT US"}</NavLink>
 							</Link>
 						</li>
 
