@@ -11,7 +11,7 @@ import { signIn, signOut, useSession } from "next-auth/client"
 import { useState } from "react"
 
 export default function Navigation() {
-	const [navShown, showNav] = useState("false")
+	const [navShown, showNav] = useState(false)
 	const [session, loading] = useSession()
 	const setAction = session => () => {
 		if (session) {
