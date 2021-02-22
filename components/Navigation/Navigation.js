@@ -27,7 +27,7 @@ export default function Navigation() {
 				<NavLinks shown={navShown}>
 					<li>
 						<Link href="/">
-							<NavHome src="icons/logo.svg" />
+							<NavHome src="/icons/logo.svg" />
 						</Link>
 					</li>
 
