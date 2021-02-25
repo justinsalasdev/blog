@@ -82,7 +82,9 @@ const pictures = [
 	"insurance",
 	"thy1",
 	"thy2",
-	"thy3"
+	"thy3",
+	"allocator",
+	"analysis"
 ]
 
 export default function Library_() {
