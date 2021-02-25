@@ -1,5 +1,6 @@
 import Footer_ from "../../components/Footer/Footer"
 import Navigation from "../../components/Navigation/Navigation"
+import { NextSeo } from "next-seo"
 
 import {
 	Page,
