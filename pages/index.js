@@ -4,7 +4,6 @@ import Header_ from "../components/Header/Header"
 import Steps_ from "../components/Steps/Steps"
 import Components_ from "../components/Components/Components"
 import Footer_ from "../components/Footer/Footer"
-import { NextSeo } from "next-seo"
 
 export const Page = styled.div`
 	display: grid;
@@ -58,30 +57,9 @@ export const Scroller = styled.div`
 	height: 100%;
 	overflow-x: scroll;
 `
-
-const seoImageUrl = "https://planopilipino.com/images/seo/default.png"
-const seoDescription = "Financial Planner"
-const seoTitle = "Plano Pilipino"
-
 export default function Index_() {
 	return (
 		<>
-			<NextSeo
-				title={seoTitle}
-				description={seoDescription}
-				canonical="https://planopilipino.com"
-				openGraph={{
-					url: "https://planopilipino.com",
-					title: seoTitle,
-					description: seoDescription,
-					images: [
-						{
-							url: seoImageUrl,
-							alt: "A financial planner in blue"
-						}
-					]
-				}}
-			/>
 			<Page>
 				<Navigation />
 				<Main>

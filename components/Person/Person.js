@@ -40,7 +40,7 @@ export default function Person_() {
 						<Credential_rfp>
 							<Credential_icon src="icons/rfp.png" />
 							<Credential_description>
-								<Blue2>Graduate of RFP Program</Blue2>
+								<Blue2>Registered Financial Planner</Blue2>
 								<Credential_src href="https://rfp.ph/" target="_blank">
 									Registered Financial Planners Institute
 								</Credential_src>{" "}

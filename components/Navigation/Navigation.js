@@ -27,7 +27,7 @@ export default function Navigation() {
 				<NavLinks shown={navShown}>
 					<li>
 						<Link href="/">
-							<NavHome src="/icons/logo.svg" />
+							<NavLink>Justin Salas RFP®</NavLink>
 						</Link>
 					</li>
 
@@ -41,7 +41,7 @@ export default function Navigation() {
 						)}
 						<li>
 							<Link href={session ? "/user/profile" : "/about"}>
-								<NavLink>{session ? "PROFILE" : "ABOUT US"}</NavLink>
+								<NavLink>{session ? "PROFILE" : "ABOUT"}</NavLink>
 							</Link>
 						</li>
 

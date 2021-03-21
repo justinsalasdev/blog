@@ -29,7 +29,7 @@ export default function Steps_() {
 				<Card_action>
 					<PopupText
 						text="Schedule a meeting 📆"
-						url="https://calendly.com/planopilipino/financial-planning"
+						url="https://calendly.com/justinsalasrfp/financial-planning-engagement"
 					/>
 				</Card_action>
 			</Card>
