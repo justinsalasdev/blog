@@ -12,83 +12,58 @@ export default function Steps_() {
 		<Cards>
 			<Card delay={1}>
 				<Card_title>
-					<span>Pre-planning</span> Get an overview
+					<span>Step 1</span> Financial Service Engagement
 				</Card_title>
 				<Card_description>
-					By scheduling a short online meeting, I'll be able to give you an
-					overview of financial planning and an introduction to the different
-					roles in the financial services industry.
+					By scheduling a short online assessment, I'll be able to get an
+					overview of your current financial situation and depending on your
+					goals, be able to recommend financial services that you may like or
+					need to avail from me.
 				</Card_description>
 				<Card_description>
-					I will also properly introduce myself as a professional so you'll have
-					an idea about my set of expertise, responsibilities, and limitations.
-					How I'll be paid and how I'll be held accountable will also be
-					disclosed.
+					I'll also expound the terms on which I render those services and the
+					basis on how I charge my fee.
+				</Card_description>
+				<Card_description>
+					Once we agree to terms on which I'll render my services to you, our
+					client-professional relationship starts.
 				</Card_description>
 
-				<Card_action>
+				{/* <Card_action>
 					<PopupText
 						text="Schedule a meeting 📆"
 						url="https://calendly.com/justinsalasrfp/financial-planning-engagement"
 					/>
-				</Card_action>
+				</Card_action> */}
 			</Card>
+
 			<Card delay={2}>
 				<Card_title>
-					<span>Pre-planning</span>Decide if I'm the right professional for you.
+					<span>Step 2</span>Financial Planning
 				</Card_title>
 				<Card_description>
-					My set of expertise might not be the right fit for the goals you want
-					to achieve or the institutions I represent may not be of your personal
-					preference. You are not, in anyway, obliged to have me as your
-					financial professional.
-				</Card_description>
-				<Card_description>
-					In any case, I am grateful to have introduced to you the unpopular yet
-					beneficial field of financial planning.
+					We'll work on the completion of the financial planning-specific
+					services you availed of and consolidate them into a written financial
+					plan.
 				</Card_description>
 			</Card>
 			<Card delay={3}>
 				<Card_title>
-					<span>Step 1</span>Get relevant financial information
+					<span>Step 3</span>Financial Plan Implementation
 				</Card_title>
 				<Card_description>
-					I can’t make a sound financial plan just like a doctor can’t prescribe
-					treatment to a patient they haven’t examined yet.
+					Given the wide variety of financial instruments available, finding the
+					right tools to put the components of your financial plan into action
+					can sometimes be a daunting task.
 				</Card_description>
 				<Card_description>
-					It is to your best interest to share to me, as accurate possible, all
-					relevant information that I need to assess and understand your current
-					financial situation.
+					As your financial planner, I will explain, to the best of my ability,
+					viable options so you can make the best possible choice.
 				</Card_description>
 			</Card>
 			<Card delay={4}>
 				<Card_title>
-					<span>Step 2</span>Develop financial plan
-				</Card_title>
-				<Card_description>
-					In this step, we'll collaborately design an action plan that you may
-					want or need to undertake to achieve your financial goals given your
-					current financial situation.
-				</Card_description>
-			</Card>
-			<Card delay={5}>
-				<Card_title>
-					<span>Step 3</span>Implementation
-				</Card_title>
-				<Card_description>
-					Given the wide variety of financial instruments available, finding the
-					right tools to put your financial plan into action can sometimes be a
-					daunting task.
-				</Card_description>
-				<Card_description>
-					As your financial advisor, I will explain, to the best of my ability,
-					viable options so you, and you alone, can make an informed choice.
-				</Card_description>
-			</Card>
-			<Card delay={6}>
-				<Card_title>
-					<span>Step ↺</span>Monitoring, management and review
+					<span>Step ↺</span>Progress Monitoring & On-going Review
 				</Card_title>
 				<Card_description>
 					Investment performance must be periodically monitored to see

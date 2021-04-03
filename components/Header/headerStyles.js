@@ -12,7 +12,7 @@ const Header = styled.header`
 	background-size: cover;
 `
 const Header_title = styled.div`
-	font-size: 2.8rem;
+	font-size: 3rem;
 	width: 70%;
 	max-width: 80rem;
 	text-align: center;

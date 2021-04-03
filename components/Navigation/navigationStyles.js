@@ -18,7 +18,7 @@ const Nav = styled.nav`
 	}
 `
 const NavLinks = styled.ul`
-	padding: 0.7rem;
+	padding: 1rem;
 	display: grid;
 	align-items: center;
 	grid-template-columns: 1fr auto;
@@ -41,6 +41,7 @@ const NavLinks = styled.ul`
 `
 
 const NavLink = styled.a`
+	font-size: 2.2rem;
 	cursor: pointer;
 	border: 0.1rem solid transparent;
 	color: var(--white);

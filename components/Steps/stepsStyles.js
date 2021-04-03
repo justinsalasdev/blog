@@ -3,8 +3,8 @@ import { fromBottom } from "./stepsAnimations"
 
 const Cards = styled.ul`
 	margin: 0 auto;
-	width: 220rem;
-	padding-bottom: 1rem;
+	width: 170rem;
+	padding-bottom: 2rem;
 	/* background-color: blue; */
 	justify-content: space-evenly;
 	display: flex;
@@ -16,7 +16,7 @@ const Card = styled.li`
 	flex-shrink: 0;
 	flex-grow: 0;
 	background-color: var(--white);
-	width: 35rem;
+	width: 40rem;
 	overflow: hidden;
 	animation: ${fromBottom} 0.3s cubic-bezier(0, 1, 0, 1);
 	animation-fill-mode: backwards;
@@ -46,7 +46,7 @@ const Card_title = styled.h3`
 const Card_description = styled.p`
 	/* height: 100%; */
 	text-indent: 2rem;
-	padding: 1.5rem 1.5rem 0 1.5rem;
+	padding: 2rem 2rem 0 2rem;
 	text-align: center;
 
 	/* word-break: break-all; */
