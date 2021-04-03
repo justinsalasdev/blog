@@ -59,10 +59,10 @@ export default function Navigation() {
 						</li> */}
 
 						{/* <li>
-						<NavLink onClick={setAction(session)}>
-							{session ? "LOGOUT" : "CLIENT LOGIN"}
-						</NavLink>
-					</li> */}
+							<NavLink onClick={setAction(session)}>
+								{session ? "LOGOUT" : "CLIENT LOGIN"}
+							</NavLink>
+						</li> */}
 					</div>
 				</NavLinks>
 			</Nav>

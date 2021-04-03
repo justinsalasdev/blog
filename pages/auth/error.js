@@ -18,5 +18,5 @@ export const Page = styled.div`
 // `
 
 export default function Benefits_() {
-	return <Page>Error</Page>
+	return <Page>This page is only for my clients</Page>
 }
