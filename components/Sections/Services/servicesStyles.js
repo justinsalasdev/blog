@@ -48,6 +48,10 @@ const Topic_1 = styled.li`
 	padding: 2rem;
 	text-align: center;
 	border: 0.05rem solid var(--white);
+
+	@media screen and (max-width: 36.26em) {
+		text-align: left;
+	}
 `
 
 const Topic_title = styled.h4`
