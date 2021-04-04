@@ -1,7 +1,13 @@
 import { Green, Orange } from "../../helper-components/Highlights"
 import Link from "next/link"
+import { PopupText } from "react-calendly"
 
-import { Header, Header_link, Header_title } from "./headerStyles"
+import {
+	Header,
+	Header_link,
+	Header_title,
+	Header_action
+} from "./headerStyles"
 
 export default function Header_() {
 	return (
@@ -13,6 +19,12 @@ export default function Header_() {
 			<Link href="/articles/benefits">
 				<Header_link>More benefits of financial planning &rarr;</Header_link>
 			</Link>
+			<Header_action>
+				<PopupText
+					text="Schedule a meeting 📆"
+					url="https://calendly.com/justinsalasrfp/financial-planning-engagement"
+				/>
+			</Header_action>
 		</Header>
 	)
 }

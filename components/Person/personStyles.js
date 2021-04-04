@@ -8,7 +8,9 @@ const Person = styled.section`
 	max-width: 130rem;
 	display: grid;
 	grid-template-columns: auto 1fr;
-	box-shadow: 0.2rem 0.2rem 0.8rem var(--shadow);
+	/* box-shadow: 0.2rem 0.2rem 0.8rem var(--shadow); */
+	border-bottom: 0.1rem solid var(--gray);
+	border-top: 0.1rem solid var(--gray);
 	animation: ${fromLeft} 2s cubic-bezier(0, 1, 0, 1);
 	animation-fill-mode: backwards;
 

@@ -4,6 +4,7 @@ import { Footer, Message } from "./footerStyles"
 export default function Footer_() {
 	return (
 		<Footer>
+			<Message>© Justin Salas. All rights reserved</Message>
 			<Message>
 				Follow me on{" "}
 				<Blue1>
@@ -12,8 +13,8 @@ export default function Footer_() {
 					</a>
 				</Blue1>
 			</Message>
-			<Message>justinsalasrfp@gmail.com</Message>
-			<Message>© Justin Salas. All rights reserved</Message>
+
+			<Message>Email: justinsalasrfp@gmail.com</Message>
 		</Footer>
 	)
 }

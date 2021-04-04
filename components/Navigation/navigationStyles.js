@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const bp = "27.33em"
+const bp = "36em"
 
 const NavBar = styled.div`
 	position: relative;
@@ -78,7 +78,7 @@ const NavMenu = styled.button`
 	padding: 1rem;
 	@media screen and (max-width: ${bp}) {
 		display: block;
-		top: ${props => (props.shown ? "80%" : "50%")};
+		top: ${props => (props.shown ? "85%" : "50%")};
 		left: 50%;
 	}
 `

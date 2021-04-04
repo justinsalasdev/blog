@@ -6,7 +6,8 @@ const narrow = "42em"
 const Process = styled.section`
 	/* height: 30rem; */
 	/* clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%); */
-	/* background-color: var(--gray); */
+	color: var(--white);
+	background-color: var(--gray);
 	display: grid;
 	padding: 2rem 0 1rem 0;
 	grid-template-rows: auto 1fr;
@@ -37,7 +38,7 @@ const Card = styled.li`
 		justify-content: center;
 		align-items: center;
 		border-top: ${props =>
-			props.noborder ? "none" : "0.1rem solid var(--gray)"};
+			props.noborder ? "none" : "0.1rem solid var(--white)"};
 	}
 
 	@media screen and (max-width: ${narrow}) {
@@ -69,15 +70,18 @@ const Card_image = styled.img`
 const Card_title = styled.h3`
 	font-size: 3rem;
 	margin-bottom: 1rem;
+	font-weight: 400;
 `
 const Card_description = styled.p`
+	font-weight: 300;
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
 	text-indent: 4rem;
 	max-width: 80rem;
 
 	@media screen and (max-width: ${changeover}) {
-		text-align: justify;
+		/* text-align: justify;
+		word-break: break-all; */
 	}
 `
 

@@ -17,7 +17,7 @@ export default function Process_() {
 				<Card noborder>
 					<Card_image src="images/meeting.svg" />
 					<Divider>
-						<Card_title>Step 1 : Financial Service Engagement</Card_title>
+						<Card_title>Service Engagement</Card_title>
 						<Card_description>
 							By scheduling a short online assessment, I'll be able to get an
 							overview of your current financial situation and depending on your
@@ -36,7 +36,7 @@ export default function Process_() {
 				<Card>
 					<Card_image src="images/planning.svg" />
 					<Divider first>
-						<Card_title>Step 2 : Financial Planning</Card_title>
+						<Card_title>Financial planning</Card_title>
 						<Card_description>
 							We'll work on the completion of the financial planning-specific
 							services you availed and consolidate them into a written financial
@@ -47,11 +47,11 @@ export default function Process_() {
 				<Card>
 					<Card_image src="images/implementation.svg" />
 					<Divider>
-						<Card_title>Step 3 : Financial Plan Implementation</Card_title>
+						<Card_title>Financial plan implementation</Card_title>
 						<Card_description>
 							Given the wide variety of financial instruments available, finding
 							the right tools to put the components of your financial plan into
-							action can sometimes be a daunting task.
+							action can sometimes be a daunting and time consuming task.
 						</Card_description>
 						<Card_description>
 							As your financial planner, I will determine objectively, to the
@@ -63,7 +63,7 @@ export default function Process_() {
 				<Card>
 					<Card_image src="images/review.svg" />
 					<Divider first>
-						<Card_title>Progress Monitoring and On-going Review</Card_title>
+						<Card_title>Management and review</Card_title>
 						<Card_description>
 							Investment performance must be periodically monitored to see
 							reallocation opportunities or rebalancing requirements. This is to

@@ -3,23 +3,26 @@ import Navigation from "../components/Navigation/Navigation"
 import styled from "styled-components"
 import { keyframes } from "styled-components"
 
-const four = `93.13em`
-const three = "74.53"
-const two = "50.13em"
-const one = "33.4em"
-
 export const Page = styled.div`
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto 1fr auto;
+	grid-template-rows: auto auto 1fr auto;
 	min-height: 100vh;
 `
 
 const Main = styled.main`
+	display: grid;
+	grid-template-rows: auto auto;
 	padding: 1rem 0;
 	width: 95%;
 	margin: 0 auto;
 	max-width: 150rem;
+`
+const Summary = styled.p`
+	text-align: center;
+	padding: 2rem;
+	border-bottom: 0.1rem solid var(--gray);
+	margin-bottom: 2rem;
 `
 
 const Books = styled.ul`
@@ -92,6 +95,10 @@ export default function Library_() {
 		<Page>
 			<Navigation />
 			<Main>
+				<Summary>
+					Sharing with you some of the books that helped improve my knowledge in
+					personal finance.
+				</Summary>
 				<Books>
 					{pictures.map((picture, index) => {
 						return (

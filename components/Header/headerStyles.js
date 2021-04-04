@@ -39,4 +39,31 @@ const Header_link = styled.a`
 	}
 `
 
-export { Header, Header_link, Header_title }
+const Header_action = styled.div`
+	border-radius: 10rem;
+	text-align: center;
+	width: 20rem;
+	/* position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0); */
+	bottom: 1.2rem;
+	outline: none;
+	color: var(--white);
+	padding: 1.2rem;
+	font-family: "Josefin Sans";
+	font-size: 1.6rem;
+	border: 0;
+	background-color: var(--green);
+	box-shadow: 0.4rem 0.4rem 0.8rem var(--shadow);
+	:active {
+		transform: translateY(0.2rem);
+		box-shadow: 0.2rem 0.2rem 0.4rem var(--shadow1);
+	}
+
+	:hover {
+		background-color: var(--green1);
+		/* outline: 0.2rem solid var(--green2); */
+	}
+`
+
+export { Header, Header_link, Header_title, Header_action }
