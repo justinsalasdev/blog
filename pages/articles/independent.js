@@ -59,21 +59,23 @@ export default function Benefits_() {
 						</Point>
 						<Point>
 							<Heading>Everything is documented</Heading>
-							<Paragraph>
+
+							<Paragraph withList>
 								Before rendering his services, he makes sure that the client
 								understands the terms on which he renders those services by
 								expounding the contents of the financial service agreement - a
 								document that typically includes but not limited to:
-								<List>
-									<Item>the goals of the engagement</Item>
-									<Item>the ethical standards that he follows</Item>
-									<Item>the basis of his professional fee</Item>
-									<Item>what he can and can't do for the client</Item>
-									<Item>the basis of his would-be recommendations</Item>
-									<Item>your responsibility as his client</Item>
-								</List>
 							</Paragraph>
+							<List>
+								<Item>the goals of the engagement</Item>
+								<Item>the ethical standards that he follows</Item>
+								<Item>the basis of his professional fee</Item>
+								<Item>what he can and can't do for the client</Item>
+								<Item>the basis of his would-be recommendations</Item>
+								<Item>your responsibility as his client</Item>
+							</List>
 						</Point>
+
 						<Point>
 							<Heading>Your goals are aligned</Heading>
 							<Paragraph>

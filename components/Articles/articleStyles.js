@@ -42,8 +42,8 @@ const Heading = styled.h2`
 
 const Paragraph = styled.p`
 	text-indent: 4rem;
-	text-align: justify;
-	margin-bottom: 2.2rem;
+	/* text-align: justify; */
+	margin-bottom: ${props => (props.withList ? "1.1rem" : "2.2rem")};
 	padding: 0 4rem 0 4rem;
 	color: var(--black);
 	/* font-size: 1.8rem; */
@@ -62,17 +62,14 @@ const Point = styled.li`
 `
 
 const List = styled.ul`
-	/* background: red; */
-	padding: 0 8rem 0 8rem;
-	@media screen and (max-width: 30.4em) {
-		padding: 0 2rem 0 2rem;
-	}
-	margin-bottom: 1.9rem;
+	margin-left: 10%;
+	margin-bottom: 2rem;
 `
 const Item = styled.li`
 	list-style: circle;
+	padding: 0.3rem;
 	/* background: blue; */
-	margin: 1.5rem;
+	/* margin: rem; */
 `
 const Key = styled.span`
 	color: var(--green);
