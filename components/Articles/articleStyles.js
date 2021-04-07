@@ -23,10 +23,11 @@ const Title = styled.h1`
 	font-size: 2.6rem;
 	text-align: center;
 	color: var(--black);
-	margin-bottom: 1rem;
+	margin-bottom: 3rem;
 `
 
 const Heading = styled.h2`
+	/* max-width: 10rem; */
 	font-size: 1.8rem;
 	margin-bottom: 1rem;
 	color: var(--white1);
