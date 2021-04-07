@@ -56,13 +56,6 @@ const NavLink = styled.a`
 		border: 0.1rem solid var(--white);
 	}
 `
-const NavHome = styled.img`
-	display: block;
-	width: 20rem;
-	margin: 1rem;
-	cursor: pointer;
-	/* background-color: white; */
-`
 
 const NavMenu = styled.button`
 	display: none;
@@ -83,4 +76,4 @@ const NavMenu = styled.button`
 	}
 `
 
-export { Nav, NavLinks, NavLink, NavHome, NavBar, NavMenu }
+export { Nav, NavLinks, NavLink, NavBar, NavMenu }

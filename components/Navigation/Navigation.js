@@ -1,12 +1,5 @@
 import Link from "next/link"
-import {
-	NavBar,
-	Nav,
-	NavLinks,
-	NavLink,
-	NavHome,
-	NavMenu
-} from "./navigationStyles"
+import { NavBar, Nav, NavLinks, NavLink, NavMenu } from "./navigationStyles"
 import { signIn, signOut, useSession } from "next-auth/client"
 import { useState } from "react"
 
