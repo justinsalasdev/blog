@@ -6,7 +6,8 @@ const NavBar = styled.div`
 	position: relative;
 	background-color: var(--black);
 	@media screen and (max-width: ${bp}) {
-		height: ${props => (props.shown ? "25rem" : "6rem")};
+		/* padding-top: 4.5rem; */
+		height: ${props => (props.shown ? "auto" : "6rem")};
 	}
 `
 
@@ -31,11 +32,11 @@ const NavLinks = styled.ul`
 		/* background: green; */
 		display: ${props => (props.shown ? "flex" : "none")};
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 
 		div {
 			flex-direction: column;
-			align-items: center;
+			align-items: flex-start;
 		}
 	}
 `
@@ -64,15 +65,13 @@ const NavMenu = styled.button`
 	outline: none;
 	border: 0.1rem double var(--white);
 	color: var(--white);
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: ${props => (props.shown ? "3rem" : "50%")};
+	right: 1.5rem;
+	transform: translateY(-50%);
 	font-family: "Josefin Sans";
 	padding: 1rem;
 	@media screen and (max-width: ${bp}) {
 		display: block;
-		top: ${props => (props.shown ? "85%" : "50%")};
-		left: 50%;
 	}
 `
 
