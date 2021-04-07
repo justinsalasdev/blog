@@ -17,22 +17,22 @@ export default function Benefits_() {
 		<>
 			<Page>
 				<NextSeo
-					title="Article "
-					description="Having a financial plan"
-					canonical="https://planopilipino.com/"
+					title="Article"
+					description="Benefits of having a financial plan"
+					canonical="https://justinsalas.cc/"
 					openGraph={{
-						url: "https://planopilipino.com/articles/benefits",
+						url: "https://justinsalas.cc/articles/benefits",
 						title: "Benefits of having a financial plan",
 						description: "The reasons why financial planning is worth doing.",
 						images: [
 							{
-								url: "https://planopilipino.com/images/benefits.png",
+								url: "https://justinsalas.cc/images/seo/benefits.png",
 								width: 1200,
 								height: 627,
-								alt: "A happy boy holding a trophy"
+								alt: "a blank photo with written article title"
 							}
 						],
-						site_name: "Plano Pilipino"
+						site_name: "Justin Salas RFP®"
 					}}
 				/>
 				<Navigation />

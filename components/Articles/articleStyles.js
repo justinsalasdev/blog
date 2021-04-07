@@ -61,4 +61,21 @@ const Point = styled.li`
 	width: 100%;
 `
 
-export { Page, Main, Title, Heading, Paragraph, Points, Point }
+const List = styled.ul`
+	/* background: red; */
+	padding: 0 8rem 0 8rem;
+	@media screen and (max-width: 30.4em) {
+		padding: 0 2rem 0 2rem;
+	}
+	margin-bottom: 1.9rem;
+`
+const Item = styled.li`
+	list-style: circle;
+	/* background: blue; */
+	margin: 1.5rem;
+`
+const Key = styled.span`
+	color: var(--green);
+`
+
+export { Page, Main, Title, Heading, Paragraph, Points, Point, List, Item, Key }
