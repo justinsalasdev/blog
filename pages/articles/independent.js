@@ -30,7 +30,7 @@ export default function Benefits_() {
 							"His professional fee might be small thing compared to the value he can bring to your finances",
 						images: [
 							{
-								url: "https://justinsalas.cc/images/seo/independent.png",
+								url: "https://justinsalas.cc/images/seo/independent1.png",
 								width: 1200,
 								height: 627,
 								alt: "a photo containing the article title"

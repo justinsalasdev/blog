@@ -26,7 +26,7 @@ export default function Benefits_() {
 						description: "The reasons why financial planning is worth doing.",
 						images: [
 							{
-								url: "https://justinsalas.cc/images/seo/benefits.png",
+								url: "https://justinsalas.cc/images/seo/benefits1.png",
 								width: 1200,
 								height: 627,
 								alt: "a blank photo with written article title"
