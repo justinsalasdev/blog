@@ -12,7 +12,7 @@ const Header = styled.header`
 	background-size: cover;
 `
 const Header_title = styled.div`
-	font-size: 3rem;
+	font-size: 2.5rem;
 	width: 70%;
 	max-width: 80rem;
 	text-align: center;
@@ -26,7 +26,7 @@ const Header_title = styled.div`
 const Header_link = styled.a`
 	text-align: center;
 	margin-bottom: 2rem;
-	font-size: 2rem;
+	font-size: 1.7rem;
 	color: var(--blue);
 	cursor: pointer;
 	:hover {

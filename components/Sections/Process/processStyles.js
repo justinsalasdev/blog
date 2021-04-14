@@ -18,7 +18,7 @@ const Title = styled.h2`
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	margin-left: 2rem;
-	font-size: 3.5rem;
+	font-size: 3rem;
 `
 
 const Cards = styled.ul`
@@ -29,7 +29,7 @@ const Cards = styled.ul`
 `
 
 const Card = styled.li`
-	padding: 1rem 3rem 1rem 3rem;
+	padding: 0.5rem 3rem 0.5rem 3rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -38,7 +38,7 @@ const Card = styled.li`
 		justify-content: center;
 		align-items: center;
 		border-top: ${props =>
-			props.noborder ? "none" : "0.1rem solid var(--white)"};
+			props.noborder ? "none" : "0.1rem dotted var(--gray2)"};
 	}
 
 	@media screen and (max-width: ${narrow}) {
@@ -68,13 +68,13 @@ const Card_image = styled.img`
 `
 
 const Card_title = styled.h3`
-	font-size: 3rem;
+	font-size: 2.7rem;
 	margin-bottom: 1rem;
 	font-weight: 400;
 `
 const Card_description = styled.p`
 	font-weight: 300;
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 	margin-bottom: 1rem;
 	text-indent: 4rem;
 	max-width: 80rem;
@@ -86,7 +86,7 @@ const Card_description = styled.p`
 `
 
 const Divider = styled.div`
-	padding: 2rem;
+	padding: 0 2rem 2rem 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -98,7 +98,7 @@ const Divider = styled.div`
 	}
 
 	@media screen and (max-width: ${narrow}) {
-		padding: 1rem;
+		padding: 0 1rem 1rem 1rem;
 	}
 `
 
