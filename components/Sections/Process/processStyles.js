@@ -6,6 +6,7 @@ const narrow = "42em"
 const Process = styled.section`
 	/* height: 30rem; */
 	/* clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%); */
+	position: relative;
 	color: var(--white);
 	background-color: var(--gray);
 	display: grid;
@@ -14,7 +15,7 @@ const Process = styled.section`
 `
 
 const Title = styled.h2`
-	/* color: var(--white); */
+	color: var(--white);
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	margin-left: 2rem;
@@ -71,17 +72,18 @@ const Card_title = styled.h3`
 	font-size: 2.7rem;
 	margin-bottom: 1rem;
 	font-weight: 400;
+	width: 100%;
+	/* text-align: ${props => (props.right ? "right" : "left")}; */
 `
 const Card_description = styled.p`
 	font-weight: 300;
 	font-size: 2.2rem;
 	margin-bottom: 1rem;
-	text-indent: 4rem;
+
 	max-width: 80rem;
 
 	@media screen and (max-width: ${changeover}) {
-		/* text-align: justify;
-		word-break: break-all; */
+		text-indent: 4rem;
 	}
 `
 
@@ -93,8 +95,10 @@ const Divider = styled.div`
 	align-items: flex-start;
 	max-width: 8 0rem;
 	order: ${props => (props.first ? 1 : 3)};
+	text-align: ${props => (props.right ? "right" : "left")};
 	@media screen and (max-width: ${changeover}) {
 		order: 3;
+		text-align: left;
 	}
 
 	@media screen and (max-width: ${narrow}) {

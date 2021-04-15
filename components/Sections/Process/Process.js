@@ -35,7 +35,7 @@ export default function Process_() {
 				</Card>
 				<Card>
 					<Card_image src="images/planning.svg" />
-					<Divider first>
+					<Divider first right>
 						<Card_title>Financial planning</Card_title>
 						<Card_description>
 							We'll work on the completion of the financial planning-specific
@@ -62,7 +62,7 @@ export default function Process_() {
 				</Card>
 				<Card>
 					<Card_image src="images/review.svg" />
-					<Divider first>
+					<Divider first right>
 						<Card_title>Management and review</Card_title>
 						<Card_description>
 							Investment performance must be periodically monitored to see
