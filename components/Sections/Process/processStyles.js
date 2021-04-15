@@ -86,7 +86,7 @@ const Card_description = styled.p`
 		text-indent: 4rem;
 	}
 `
-
+//
 const Divider = styled.div`
 	padding: 0 2rem 2rem 2rem;
 	display: flex;
