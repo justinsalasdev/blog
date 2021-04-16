@@ -66,7 +66,7 @@ const Segment_title2 = styled(Segment_title)`
 
 const Topics = styled.ul`
 	display: flex;
-	height: 35rem;
+	height: 40rem;
 `
 const Topics2 = styled(Topics)`
 	height: 30rem;
@@ -117,10 +117,10 @@ const Topic = styled.li`
 const Topic_title = styled.span`
 	color: #e6e6e6;
 	display: block;
-	font-size: 2.4rem;
+	font-size: 2rem;
 	font-weight: 300;
 	position: absolute;
-	bottom: 5%;
+	bottom: 10%;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
