@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+const titleIndex = 2
+
 const Services = styled.section`
 	position: relative;
 	background-color: var(--black);
@@ -8,6 +10,7 @@ const Services = styled.section`
 `
 
 const Title = styled.h2`
+	z-index: ${titleIndex};
 	color: var(--black);
 	font-size: 3rem;
 	position: absolute;
@@ -29,61 +32,113 @@ const Segments = styled.ul`
 const Segment = styled.li`
 	/* padding: 0 0 4rem 0; */
 	/* margin: 2rem auto; */
-	position: static;
+	position: relative;
 `
 const Segment_title = styled.h3`
-	color: white;
-	padding: 1rem 1rem 1rem 1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	z-index: ${titleIndex};
+	padding-bottom: 1rem;
 	position: absolute;
 	top: 2rem;
 	right: 2rem;
-	width: 100%;
+	width: 70%;
 	text-align: right;
-	border-bottom: 1px solid white;
-	/* background: linear-gradient(to right, var(--orange) 80%, var(--black)); */
-	/* background-color: var(--orange2); */
-	/* color: var(--gray); */
+	border-bottom: 0.1rem solid #737373;
+	color: #e6e6e6;
+
+	@media screen and (max-width: 37.33em) {
+		top: 6rem;
+		font-weight: normal;
+	} ;
+`
+const Segment_title2 = styled(Segment_title)`
+	width: 70%;
+	/* right: auto;
+	left: 2rem; */
+	/* top: unset; */
+	transform: translateX(50%);
+	top: 4rem;
+	right: 50%;
+	text-align: center;
+	border: none;
 `
 
 const Topics = styled.ul`
-	/* display: grid;
-	/* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-	gap: 2rem;
-	justify-items: stretch;
-	/* align-items: center; */
 	display: flex;
-	/* gap: 1rem; */
+	height: 35rem;
 `
+const Topics2 = styled(Topics)`
+	height: 30rem;
+`
+const Topics3 = styled(Topics)`
+	height: 40rem;
+`
+
 const Topic = styled.li`
-	/* font-weight: 300; */
+	position: relative;
 	color: var(--white);
-	/* border: 0.05rem solid var(--white); */
-	/* width: 25%; */
 	flex-grow: 1;
-	height: 50rem;
-	background-color: green;
-	border: 1px solid gray;
-	/* margin: 0.5rem; */
+	height: 100%;
+	background: ${function ({ bg }) {
+		const setAttr = (n, color) =>
+			`${color} url("images/cards/${n}.svg") center/cover no-repeat`
+		switch (bg) {
+			case 1:
+				return setAttr(1, "#262626")
+			case 2:
+				return setAttr(2, "#404040")
+			case 3:
+				return setAttr(3, "#666666")
+			case 4:
+				return setAttr(4, "#1a1a1a")
+			case 5:
+				return setAttr(5, "#1a1a1a")
+			case 6:
+				return setAttr(6, "#1a1a1a")
+			case 7:
+				return setAttr(7, "#1a1a1a")
+			case 8:
+				return setAttr(8, "#404040")
+			case 9:
+				return setAttr(9, "#262626")
+			case 10:
+				return setAttr(10, "#1a1a1a")
+			case 11:
+				return setAttr(11, "#1a1a1a")
+			case 12:
+				return setAttr(12, "#1a1a1a")
+			case 13:
+				return setAttr(13, "#1a1a1a")
+		}
+	}};
 `
-const Topic_1 = styled.li`
-	/* border-radius: 20rem; */
+
+const Topic_title = styled.span`
+	color: #e6e6e6;
+	display: block;
+	font-size: 2.4rem;
 	font-weight: 300;
-	color: var(--white);
-	padding: 2rem;
+	position: absolute;
+	bottom: 11%;
+	left: 50%;
+	transform: translateX(-50%);
 	text-align: center;
-	border: 0.05rem solid var(--white);
-
-	@media screen and (max-width: 36.26em) {
-		text-align: left;
-	}
 `
 
-const Topic_title = styled.h4`
-	background-color: var(--gray);
-	text-align: center;
+const Topic_title2 = styled(Topic_title)`
+	bottom: 22%;
+	font-size: 2rem;
+	/* text-transform: uppercase; */
+`
 
-	padding: 1rem;
-	border-bottom: 0.1rem solid var(--white);
+const Topic_title3 = styled(Topic_title)`
+	text-transform: uppercase;
+	font-size: 2.3rem;
+	bottom: auto;
+	width: 100%;
+	top: 3rem;
+	font-weight: 400;
 `
 
 const Items = styled.ul``
@@ -100,10 +155,14 @@ export {
 	Segments,
 	Segment,
 	Segment_title,
+	Segment_title2,
 	Topics,
+	Topics2,
+	Topics3,
 	Topic,
-	Topic_1,
 	Topic_title,
+	Topic_title2,
+	Topic_title3,
 	Items,
 	Item
 }

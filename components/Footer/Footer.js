@@ -4,9 +4,8 @@ import { Footer, Message } from "./footerStyles"
 export default function Footer_() {
 	return (
 		<Footer>
-			<Message>© Justin Salas. All rights reserved</Message>
 			<Message>
-				Follow me on{" "}
+				follow me on{" "}
 				<Blue1>
 					<a href="https://facebook.com/justinsalasrfp" target="_blank">
 						Facebook
@@ -14,7 +13,8 @@ export default function Footer_() {
 				</Blue1>
 			</Message>
 
-			<Message>Email: justinsalasrfp@gmail.com</Message>
+			<Message>justinsalasrfp@gmail.com</Message>
+			<Message>Copyright © 2021 Justin Salas. All rights reserved</Message>
 		</Footer>
 	)
 }

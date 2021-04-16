@@ -5,11 +5,11 @@ const Footer = styled.footer`
 	font-size: 1.5rem;
 	line-height: 1.1;
 	text-align: center;
-	background-color: var(--gray);
+	background-color: var(--black0);
 	color: var(--white);
 	padding: 1.5rem;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	/* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
 `
 
 const Message = styled.p`

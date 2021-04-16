@@ -10,7 +10,7 @@ const Process = styled.section`
 	color: var(--white);
 	background-color: var(--gray);
 	display: grid;
-	padding: 2rem 0 1rem 0;
+	padding: 2rem 0 10rem 0;
 	/* grid-template-rows: auto 1fr; */
 `
 
