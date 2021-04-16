@@ -11,15 +11,18 @@ const Process = styled.section`
 	background-color: var(--gray);
 	display: grid;
 	padding: 2rem 0 1rem 0;
-	grid-template-rows: auto 1fr;
+	/* grid-template-rows: auto 1fr; */
 `
 
 const Title = styled.h2`
 	color: var(--white);
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	margin-left: 2rem;
 	font-size: 3rem;
+	position: absolute;
+	top: -1.75rem;
+	left: 1rem;
+	padding: 1rem 1rem 0.5rem 1rem;
+	box-shadow: 0.1rem 0.1rem 0.4rem black;
+	background-color: var(--black);
 `
 
 const Cards = styled.ul`

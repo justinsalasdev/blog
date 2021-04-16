@@ -13,58 +13,43 @@ import {
 } from "./servicesStyles"
 
 export default function Services_() {
-	/**
-	 * Title
-	 * Segments
-	 * Segment
-	 * Topics
-	 * Items
-	 *
-	 */
 	return (
 		<Services>
 			<Title>SERVICES</Title>
 			<Segments>
 				<Segment>
-					<Segment_title>Financial planning</Segment_title>
+					<Segment_title>INVESTMENT PLANNING</Segment_title>
 					<Topics>
-						<Topic nested>
-							<Topic_title>Investment Planning</Topic_title>
-							<Items>
+						<Topic>
+							{/* <Topic_title>Investment Planning</Topic_title> */}
+							{/* <Items>
 								<Item>Goal size and cashflows</Item>
 								<Item>Porfolio design</Item>
 								<Item>Allocation schedule</Item>
-							</Items>
+							</Items> */}
 						</Topic>
-						<Topic nested>
-							<Topic_title>Insurance Planning</Topic_title>
-							<Items>
+						<Topic>
+							{/* <Topic_title>Insurance Planning</Topic_title> */}
+							{/* <Items>
 								<Item>Risk factors</Item>
 								<Item>Coverage requirements</Item>
 								<Item>Budget alignment</Item>
-							</Items>
+							</Items> */}
 						</Topic>
-						<Topic nested>
-							<Topic_title>Estate Planning</Topic_title>
-							<Items>
+						<Topic>
+							{/* <Topic_title>Estate Planning</Topic_title> */}
+							{/* <Items>
 								<Item>Estate composition</Item>
 								<Item>Succession structure</Item>
 								<Item>Estate distribution </Item>
 								<Item>Planning cost </Item>
 								<Item>Implementation cost</Item>
-							</Items>
-						</Topic>
-						<Topic nested>
-							<Topic_title>Tax Planning</Topic_title>
-							<Items>
-								<Item>Business structure</Item>
-								<Item>Tax strategy</Item>
-							</Items>
+							</Items> */}
 						</Topic>
 					</Topics>
 				</Segment>
 				<Segment>
-					<Segment_title>Financial plan implementation</Segment_title>
+					{/* <Segment_title>Financial plan implementation</Segment_title> */}
 					<Topics>
 						<Topic_1>Investing</Topic_1>
 						<Topic_1>Insurance product acquisition</Topic_1>
@@ -73,7 +58,7 @@ export default function Services_() {
 					</Topics>
 				</Segment>
 				<Segment>
-					<Segment_title>Managment and review</Segment_title>
+					{/* <Segment_title>Managment and review</Segment_title> */}
 					<Topics>
 						<Topic_1>Investment plan review</Topic_1>
 						<Topic_1>Portfolio Management</Topic_1>

@@ -1,5 +1,13 @@
 import Link from "next/link"
-import { NavBar, Nav, NavLinks, NavLink, NavMenu } from "./navigationStyles"
+import {
+	NavBar,
+	Nav,
+	NavLinks,
+	NavLink,
+	NavMenu,
+	NavHome,
+	Divider
+} from "./navigationStyles"
 import { signIn, signOut, useSession } from "next-auth/client"
 import { useState } from "react"
 
@@ -17,6 +25,14 @@ export default function Navigation() {
 	return (
 		<NavBar shown={navShown}>
 			<Nav shown={navShown}>
+				{navShown ? null : ( //shows when mobile & navLinks are hidden
+					<NavHome shown={navShown}>
+						<Link href="/">
+							<NavLink>Justin Salas RFP®</NavLink>
+						</Link>
+					</NavHome>
+				)}
+
 				<NavLinks shown={navShown}>
 					<li>
 						<Link href="/">
@@ -24,7 +40,7 @@ export default function Navigation() {
 						</Link>
 					</li>
 
-					<div>
+					<Divider>
 						{session && (
 							<li>
 								<Link href="/user/dashboard">
@@ -56,7 +72,7 @@ export default function Navigation() {
 								{session ? "LOGOUT" : "LOGIN"}
 							</NavLink>
 						</li>
-					</div>
+					</Divider>
 				</NavLinks>
 			</Nav>
 			<NavMenu

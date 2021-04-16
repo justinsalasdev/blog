@@ -6,16 +6,18 @@ const NavBar = styled.div`
 	position: relative;
 	background-color: var(--black);
 	@media screen and (max-width: ${bp}) {
-		/* padding-top: 4.5rem; */
 		height: ${props => (props.shown ? "auto" : "6rem")};
 	}
 `
 
 const Nav = styled.nav`
-	/* position: absolute; */
-	/* height: 10rem; */
+	width: 100%;
+	height: 100%;
+
 	@media screen and (max-width: ${bp}) {
-		display: ${props => (props.shown ? "relative" : "absolute")};
+		display: flex;
+		align-items: center;
+		padding: ${props => (props.shown ? "0" : "1.5rem 1rem 1rem 1rem ")};
 	}
 `
 const NavLinks = styled.ul`
@@ -24,20 +26,25 @@ const NavLinks = styled.ul`
 	align-items: center;
 	grid-template-columns: 1fr auto;
 
-	div {
-		display: flex;
-	}
-
 	@media screen and (max-width: ${bp}) {
 		/* background: green; */
 		display: ${props => (props.shown ? "flex" : "none")};
 		flex-direction: column;
 		align-items: flex-start;
+	}
+`
 
-		div {
-			flex-direction: column;
-			align-items: flex-start;
-		}
+const Divider = styled.div`
+	display: flex;
+	@media screen and (max-width: ${bp}) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+`
+
+const NavHome = styled.li`
+	@media screen and (min-width: ${bp}) {
+		display: none;
 	}
 `
 
@@ -75,4 +82,4 @@ const NavMenu = styled.button`
 	}
 `
 
-export { Nav, NavLinks, NavLink, NavBar, NavMenu }
+export { Nav, NavLinks, NavLink, NavHome, NavBar, NavMenu, Divider }
