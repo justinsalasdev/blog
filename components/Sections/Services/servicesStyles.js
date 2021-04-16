@@ -120,7 +120,7 @@ const Topic_title = styled.span`
 	font-size: 2.4rem;
 	font-weight: 300;
 	position: absolute;
-	bottom: 11%;
+	bottom: 5%;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
