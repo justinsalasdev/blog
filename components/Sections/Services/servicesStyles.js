@@ -5,8 +5,6 @@ const titleIndex = 2
 const Services = styled.section`
 	position: relative;
 	background-color: var(--black);
-	/* padding: 2rem 0 1rem 0; */
-	/* grid-template-rows: auto 1fr; */
 `
 
 const Title = styled.h2`
@@ -16,16 +14,14 @@ const Title = styled.h2`
 	position: absolute;
 	top: -1.75rem;
 	left: 1rem;
-	/* text-shadow: 0.1rem 0.1rem 0.4rem var(--black); */
 	padding: 1rem 1rem 0.5rem 1rem;
-	/* box-shadow: 0.1rem 0.1rem 0.rem var(--white); */
 	background-color: var(--white);
 	vertical-align: middle;
 `
 
 const Segments = styled.ul`
 	/* max-width: 120rem; */
-	/* width: 98%; */
+	width: 100%;
 	/* margin: auto;
 	margin-top: 5rem; */
 `
@@ -38,13 +34,13 @@ const Segment_title = styled.h3`
 	font-weight: 400;
 	text-transform: uppercase;
 	z-index: ${titleIndex};
-	padding-bottom: 1rem;
+	padding-top: 1rem;
 	position: absolute;
 	top: 2rem;
 	right: 2rem;
 	width: 70%;
 	text-align: right;
-	border-bottom: 0.1rem solid #737373;
+	border-top: 0.1rem solid #737373;
 	color: #e6e6e6;
 
 	@media screen and (max-width: 37.33em) {
@@ -54,9 +50,6 @@ const Segment_title = styled.h3`
 `
 const Segment_title2 = styled(Segment_title)`
 	width: 70%;
-	/* right: auto;
-	left: 2rem; */
-	/* top: unset; */
 	transform: translateX(50%);
 	top: 4rem;
 	right: 50%;
@@ -129,7 +122,6 @@ const Topic_title = styled.span`
 const Topic_title2 = styled(Topic_title)`
 	bottom: 22%;
 	font-size: 2rem;
-	/* text-transform: uppercase; */
 `
 
 const Topic_title3 = styled(Topic_title)`
@@ -144,8 +136,6 @@ const Topic_title3 = styled(Topic_title)`
 const Items = styled.ul``
 const Item = styled.li`
 	padding: 1rem 1rem 1rem 2rem;
-
-	/* background-color: green; */
 	font-size: 2rem;
 `
 
