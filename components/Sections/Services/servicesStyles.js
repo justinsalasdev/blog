@@ -59,13 +59,7 @@ const Segment_title2 = styled(Segment_title)`
 
 const Topics = styled.ul`
 	display: flex;
-	height: 40rem;
-`
-const Topics2 = styled(Topics)`
-	height: 30rem;
-`
-const Topics3 = styled(Topics)`
-	height: 40rem;
+	height: ${props => `${props.h}rem`};
 `
 
 const Topic = styled.li`
@@ -147,8 +141,6 @@ export {
 	Segment_title,
 	Segment_title2,
 	Topics,
-	Topics2,
-	Topics3,
 	Topic,
 	Topic_title,
 	Topic_title2,

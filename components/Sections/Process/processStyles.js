@@ -21,7 +21,7 @@ const Title = styled.h2`
 	top: -1.75rem;
 	left: 1rem;
 	padding: 1rem 1rem 0.5rem 1rem;
-	box-shadow: 0.1rem 0.1rem 0.4rem black;
+	/* box-shadow: 0.1rem 0.1rem 0.4rem black; */
 	background-color: var(--black);
 `
 

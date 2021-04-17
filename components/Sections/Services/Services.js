@@ -21,7 +21,7 @@ export default function Services_() {
 			<Segments>
 				<Segment>
 					<Segment_title>Investment Planning</Segment_title>
-					<Topics>
+					<Topics h={40}>
 						<Topic bg={1}>
 							<Topic_title>Retirement</Topic_title>
 						</Topic>
@@ -35,7 +35,7 @@ export default function Services_() {
 				</Segment>
 				<Segment>
 					<Segment_title2>Insurance Planning</Segment_title2>
-					<Topics2>
+					<Topics h={30}>
 						<Topic bg={4}>
 							<Topic_title2>Risk</Topic_title2>
 						</Topic>
@@ -48,21 +48,21 @@ export default function Services_() {
 						<Topic bg={7}>
 							<Topic_title2>Brand</Topic_title2>
 						</Topic>
-					</Topics2>
+					</Topics>
 				</Segment>
 				<Segment>
-					<Topics3>
+					<Topics h={40}>
 						<Topic bg={8}>
 							<Topic_title3>Estate Planning</Topic_title3>
 						</Topic>
 						<Topic bg={9}>
 							<Topic_title3>Tax Planning</Topic_title3>
 						</Topic>
-					</Topics3>
+					</Topics>
 				</Segment>
 				<Segment>
 					<Segment_title2>Management</Segment_title2>
-					<Topics2>
+					<Topics h={30}>
 						<Topic bg={10}>
 							<Topic_title2>Monitor</Topic_title2>
 						</Topic>
@@ -75,7 +75,7 @@ export default function Services_() {
 						<Topic bg={13}>
 							<Topic_title2>Review</Topic_title2>
 						</Topic>
-					</Topics2>
+					</Topics>
 				</Segment>
 			</Segments>
 		</Services>

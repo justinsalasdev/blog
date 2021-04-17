@@ -12,7 +12,7 @@ import {
 export default function Process_() {
 	return (
 		<Process>
-			<Title>SERVICING PROCESS</Title>
+			<Title>PROCESS</Title>
 			<Cards>
 				<Card noborder>
 					<Card_image src="images/meeting.svg" />
