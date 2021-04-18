@@ -2,12 +2,12 @@ import styled from "styled-components"
 
 const titleIndex = 2
 
-const Services = styled.section`
+export const Services = styled.section`
 	position: relative;
 	background-color: var(--black);
 `
 
-const Title = styled.h2`
+export const Title = styled.h2`
 	z-index: ${titleIndex};
 	color: var(--black);
 	font-size: 3rem;
@@ -19,18 +19,18 @@ const Title = styled.h2`
 	vertical-align: middle;
 `
 
-const Segments = styled.ul`
+export const Segments = styled.ul`
 	/* max-width: 120rem; */
 	width: 100%;
 	/* margin: auto;
 	margin-top: 5rem; */
 `
-const Segment = styled.li`
+export const Segment = styled.li`
 	/* padding: 0 0 4rem 0; */
 	/* margin: 2rem auto; */
 	position: relative;
 `
-const Segment_title = styled.h3`
+export const Segment_title = styled.h3`
 	font-weight: 400;
 	text-transform: uppercase;
 	z-index: ${titleIndex};
@@ -48,7 +48,7 @@ const Segment_title = styled.h3`
 		font-weight: normal;
 	} ;
 `
-const Segment_title2 = styled(Segment_title)`
+export const Segment_title2 = styled(Segment_title)`
 	width: 70%;
 	transform: translateX(50%);
 	top: 4rem;
@@ -57,12 +57,12 @@ const Segment_title2 = styled(Segment_title)`
 	border: none;
 `
 
-const Topics = styled.ul`
+export const Topics = styled.ul`
 	display: flex;
 	height: ${props => `${props.h}rem`};
 `
 
-const Topic = styled.li`
+export const Topic = styled.li`
 	position: relative;
 	color: var(--white);
 	flex-grow: 1;
@@ -101,7 +101,7 @@ const Topic = styled.li`
 	}};
 `
 
-const Topic_title = styled.span`
+export const Topic_title = styled.span`
 	color: #e6e6e6;
 	display: block;
 	font-size: 2rem;
@@ -113,12 +113,12 @@ const Topic_title = styled.span`
 	text-align: center;
 `
 
-const Topic_title2 = styled(Topic_title)`
+export const Topic_title2 = styled(Topic_title)`
 	bottom: 22%;
 	font-size: 2rem;
 `
 
-const Topic_title3 = styled(Topic_title)`
+export const Topic_title3 = styled(Topic_title)`
 	text-transform: uppercase;
 	font-size: 2.3rem;
 	bottom: auto;
@@ -127,24 +127,8 @@ const Topic_title3 = styled(Topic_title)`
 	font-weight: 400;
 `
 
-const Items = styled.ul``
-const Item = styled.li`
+export const Items = styled.ul``
+export const Item = styled.li`
 	padding: 1rem 1rem 1rem 2rem;
 	font-size: 2rem;
 `
-
-export {
-	Services,
-	Title,
-	Segments,
-	Segment,
-	Segment_title,
-	Segment_title2,
-	Topics,
-	Topic,
-	Topic_title,
-	Topic_title2,
-	Topic_title3,
-	Items,
-	Item
-}

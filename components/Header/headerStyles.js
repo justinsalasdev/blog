@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { fromLeft } from "./headerAnimations"
-const Header = styled.header`
+export const Header = styled.header`
 	/* width: 50%; */
 	display: flex;
 	flex-direction: column;
@@ -11,7 +11,7 @@ const Header = styled.header`
 	background-attachment: fixed;
 	background-size: cover;
 `
-const Header_title = styled.div`
+export const Header_title = styled.div`
 	font-size: 2.5rem;
 	width: 70%;
 	max-width: 80rem;
@@ -23,7 +23,7 @@ const Header_title = styled.div`
 		width: 90%;
 	}
 `
-const Header_link = styled.a`
+export const Header_link = styled.a`
 	/* vertical-align: middle; */
 	text-align: center;
 	margin-bottom: 2rem;
@@ -40,7 +40,7 @@ const Header_link = styled.a`
 	}
 `
 
-const Header_action = styled.div`
+export const Header_action = styled.div`
 	border-radius: 10rem;
 	text-align: center;
 	width: 20rem;
@@ -66,5 +66,3 @@ const Header_action = styled.div`
 		/* outline: 0.2rem solid var(--green2); */
 	}
 `
-
-export { Header, Header_link, Header_title, Header_action }

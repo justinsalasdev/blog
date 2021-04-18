@@ -3,7 +3,7 @@ import { fromLeft } from "./personAnimations"
 
 const b_photo = "61.86em"
 
-const Person = styled.section`
+export const Person = styled.section`
 	width: 95%;
 	max-width: 130rem;
 	display: grid;
@@ -20,7 +20,7 @@ const Person = styled.section`
 	} ;
 `
 
-const Picture = styled.img`
+export const Picture = styled.img`
 	/* height: 50rem; */
 	width: 30rem;
 	/* height: 30rem; */
@@ -45,7 +45,7 @@ const Picture = styled.img`
 	}
 `
 
-const Description = styled.div`
+export const Description = styled.div`
 	/* border-left: 0.4rem double black; */
 	padding-bottom: 1rem;
 	@media screen and (max-width: ${b_photo}) {
@@ -53,7 +53,7 @@ const Description = styled.div`
 	}
 `
 
-const Description_prag = styled.p`
+export const Description_prag = styled.p`
 	padding: 0.3rem 1.5rem;
 	text-align: justify;
 	text-indent: 3rem;
@@ -61,7 +61,7 @@ const Description_prag = styled.p`
 	/* margin: 1rem; */
 `
 
-const Description_link = styled.a`
+export const Description_link = styled.a`
 	/* text-align: center; */
 
 	color: var(--blue);
@@ -75,14 +75,14 @@ const Description_link = styled.a`
 	}
 `
 
-const Credentials = styled.div`
+export const Credentials = styled.div`
 	/* margin-top: 2rem; */
 `
 
-const Credential_list = styled.ul`
+export const Credential_list = styled.ul`
 	/* list-style: circle; */
 `
-const Credential = styled.li`
+export const Credential = styled.li`
 	/* margin-bottom: 0.7rem; */
 	background-color: #000740;
 	/* margin-bottom: 0.5rem; */
@@ -98,37 +98,22 @@ const Credential = styled.li`
 	}
 `
 
-const Credential_rfp = styled(Credential)`
+export const Credential_rfp = styled(Credential)`
 	background-color: var(--white1);
 	/* outline: 1px solid var(--black); */
 `
 
-const Credential_icon = styled.img`
+export const Credential_icon = styled.img`
 	width: 6rem;
 	height: 6rem;
 `
 
-const Credential_description = styled.div`
+export const Credential_description = styled.div`
 	padding-left: 1rem;
 `
 
-const Credential_src = styled.a`
+export const Credential_src = styled.a`
 	color: ${props => (props.awp ? `var(--blue4)` : `var(--blue)`)};
 	display: block;
 	font-size: 1.5rem;
 `
-
-export {
-	Person,
-	Picture,
-	Description,
-	Description_prag,
-	Description_link,
-	Credentials,
-	Credential_list,
-	Credential,
-	Credential_rfp,
-	Credential_icon,
-	Credential_description,
-	Credential_src
-}

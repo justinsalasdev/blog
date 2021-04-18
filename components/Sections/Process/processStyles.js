@@ -1,9 +1,8 @@
 import styled from "styled-components"
-
 const changeover = "62em"
 const narrow = "42em"
 
-const Process = styled.section`
+export const Process = styled.section`
 	/* height: 30rem; */
 	/* clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%); */
 	position: relative;
@@ -14,7 +13,7 @@ const Process = styled.section`
 	/* grid-template-rows: auto 1fr; */
 `
 
-const Title = styled.h2`
+export const Title = styled.h2`
 	color: var(--white);
 	font-size: 3rem;
 	position: absolute;
@@ -25,14 +24,14 @@ const Title = styled.h2`
 	background-color: var(--black);
 `
 
-const Cards = styled.ul`
+export const Cards = styled.ul`
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 `
 
-const Card = styled.li`
+export const Card = styled.li`
 	padding: 0.5rem 3rem 0.5rem 3rem;
 	display: flex;
 	justify-content: center;
@@ -49,7 +48,7 @@ const Card = styled.li`
 		padding: 1rem;
 	}
 `
-const Card_image = styled.img`
+export const Card_image = styled.img`
 	order: 2;
 	height: 45rem;
 	@media screen and (max-width: 95em) {
@@ -71,14 +70,14 @@ const Card_image = styled.img`
 	}
 `
 
-const Card_title = styled.h3`
+export const Card_title = styled.h3`
 	font-size: 2.7rem;
 	margin-bottom: 1rem;
 	font-weight: 400;
 	width: 100%;
 	/* text-align: ${props => (props.right ? "right" : "left")}; */
 `
-const Card_description = styled.p`
+export const Card_description = styled.p`
 	font-weight: 300;
 	font-size: 2.2rem;
 	margin-bottom: 1rem;
@@ -90,7 +89,7 @@ const Card_description = styled.p`
 	}
 `
 //--
-const Divider = styled.div`
+export const Divider = styled.div`
 	padding: 0 2rem 2rem 2rem;
 	display: flex;
 	flex-direction: column;
@@ -108,14 +107,3 @@ const Divider = styled.div`
 		padding: 0 1rem 1rem 1rem;
 	}
 `
-
-export {
-	Process,
-	Title,
-	Cards,
-	Card,
-	Card_title,
-	Card_image,
-	Card_description,
-	Divider
-}

@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-const bp = "36em"
+export const bp = "36em"
 
-const NavBar = styled.div`
+export const NavBar = styled.div`
 	position: relative;
 	background-color: var(--black);
 	@media screen and (max-width: ${bp}) {
@@ -10,7 +10,7 @@ const NavBar = styled.div`
 	}
 `
 
-const Nav = styled.nav`
+export const Nav = styled.nav`
 	width: 100%;
 	height: 100%;
 
@@ -20,7 +20,7 @@ const Nav = styled.nav`
 		padding: ${props => (props.shown ? "0" : "1.5rem 1rem 1rem 1rem ")};
 	}
 `
-const NavLinks = styled.ul`
+export const NavLinks = styled.ul`
 	padding: 1rem;
 	display: grid;
 	align-items: center;
@@ -34,7 +34,7 @@ const NavLinks = styled.ul`
 	}
 `
 
-const Divider = styled.div`
+export const Divider = styled.div`
 	display: flex;
 	@media screen and (max-width: ${bp}) {
 		flex-direction: column;
@@ -42,13 +42,13 @@ const Divider = styled.div`
 	}
 `
 
-const NavHome = styled.li`
+export const NavHome = styled.li`
 	@media screen and (min-width: ${bp}) {
 		display: none;
 	}
 `
 
-const NavLink = styled.a`
+export const NavLink = styled.a`
 	font-size: 2rem;
 	cursor: pointer;
 	border: 0.1rem solid transparent;
@@ -70,7 +70,7 @@ const NavLink = styled.a`
 	}
 `
 
-const NavMenu = styled.button`
+export const NavMenu = styled.button`
 	display: none;
 	position: absolute;
 	background-color: var(--black);
@@ -86,5 +86,3 @@ const NavMenu = styled.button`
 		display: block;
 	}
 `
-
-export { Nav, NavLinks, NavLink, NavHome, NavBar, NavMenu, Divider }
