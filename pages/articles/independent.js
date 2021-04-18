@@ -98,6 +98,17 @@ export default function Benefits_() {
 								always in line with industry best practices.
 							</Paragraph>
 						</Point>
+						<Point>
+							<Heading>Accountability</Heading>
+							<Paragraph>
+								Since everything is documented, you know what to expect from the
+								professional engagement and thus, have something to compare the
+								results with. The financial planner will always strive to
+								deliver because the client holds an agreement that, if not met,
+								may be grounds for the professional to lose his practice. By all
+								means, who would want a dissatisfied client?
+							</Paragraph>
+						</Point>
 					</Points>
 				</Main>
 				<Footer_ />
