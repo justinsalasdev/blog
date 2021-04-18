@@ -1,19 +1,38 @@
 import styled from "styled-components"
 
-const Footer = styled.footer`
+export const Footer = styled.footer`
 	font-weight: 300;
 	font-size: 1.5rem;
-	line-height: 1.1;
+
 	text-align: center;
 	background-color: var(--black0);
 	color: var(--white);
-	padding: 1.5rem;
-	display: grid;
-	/* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 `
 
-const Message = styled.p`
+export const Message = styled.p`
+	display: inline-block;
 	padding: 0.2rem;
+	/* border-bottom: 1px solid white; */
+	margin: auto;
 `
 
-export { Footer, Message }
+export const List = styled.ul`
+	display: flex;
+	align-items: center;
+`
+export const Item = styled.li``
+
+export const Link = styled.a`
+	display: block;
+	padding: 0.5rem;
+	font-size: 3rem;
+
+	svg {
+		vertical-align: middle;
+	}
+`

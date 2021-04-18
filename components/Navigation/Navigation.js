@@ -44,7 +44,10 @@ export default function Navigation() {
 						{session && (
 							<li>
 								<Link href="/user/dashboard">
-									<NavLink>DASHBOARD</NavLink>
+									<NavLink>
+										<CgProfile />
+										DASHBOARD
+									</NavLink>
 								</Link>
 							</li>
 						)}

@@ -49,11 +49,11 @@ const NavHome = styled.li`
 `
 
 const NavLink = styled.a`
-	font-size: 2.2rem;
+	font-size: 2rem;
 	cursor: pointer;
 	border: 0.1rem solid transparent;
 	color: var(--white);
-	padding: 0.7rem;
+	padding: 1rem;
 	display: inline-block;
 	:hover {
 		background-color: var(--gray);
@@ -62,6 +62,11 @@ const NavLink = styled.a`
 	:active {
 		transform: scale(1.02);
 		border: 0.1rem solid var(--white);
+	}
+
+	svg {
+		display: inline-block;
+		/* margin-bottom: 0.5rem; */
 	}
 `
 

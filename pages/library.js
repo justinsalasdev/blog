@@ -2,13 +2,7 @@ import Footer_ from "../components/Footer/Footer"
 import Navigation from "../components/Navigation/Navigation"
 import styled from "styled-components"
 import { keyframes } from "styled-components"
-
-export const Page = styled.div`
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto 1fr auto;
-	min-height: 100vh;
-`
+import { Page } from "../components/Pages/pageStyles"
 
 const Main = styled.main`
 	display: grid;

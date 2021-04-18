@@ -24,6 +24,7 @@ const Header_title = styled.div`
 	}
 `
 const Header_link = styled.a`
+	/* vertical-align: middle; */
 	text-align: center;
 	margin-bottom: 2rem;
 	font-size: 1.7rem;
@@ -36,10 +37,6 @@ const Header_link = styled.a`
 	:active {
 		color: var(--green);
 		transform: translateX(1rem);
-	}
-
-	.icon {
-		vertical-align: middle;
 	}
 `
 
