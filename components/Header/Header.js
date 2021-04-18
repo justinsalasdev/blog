@@ -1,6 +1,7 @@
 import { Green, Orange } from "../../helper-components/Highlights"
 import Link from "next/link"
 import { PopupText } from "react-calendly"
+import { CgArrowLongRight } from "react-icons/cg"
 
 import {
 	Header,
@@ -17,7 +18,10 @@ export default function Header_() {
 				decisions and keeps you on track to meet your <Orange>goals.</Orange>
 			</Header_title>
 			<Link href="/articles/benefits">
-				<Header_link>More benefits of financial planning &rarr;</Header_link>
+				<Header_link>
+					More benefits of financial planning{" "}
+					<CgArrowLongRight className="icon" />
+				</Header_link>
 			</Link>
 			<Header_action>
 				<PopupText

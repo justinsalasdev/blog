@@ -37,6 +37,10 @@ const Header_link = styled.a`
 		color: var(--green);
 		transform: translateX(1rem);
 	}
+
+	.icon {
+		vertical-align: middle;
+	}
 `
 
 const Header_action = styled.div`
