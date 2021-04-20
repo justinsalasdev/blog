@@ -17,6 +17,7 @@
 		/* Safari, Android, iOS */
 			url("/fonts/josefin/josefin-sans-v16-latin-regular.svg#JosefinSans")
 			format("svg"); /* Legacy iOS */
+	font-display: fallback;
 }
 /* josefin-sans-300 - latin */
 @font-face {
@@ -36,6 +37,7 @@
 		/* Safari, Android, iOS */
 			url("/fonts/josefin/josefin-sans-v16-latin-300.svg#JosefinSans")
 			format("svg"); /* Legacy iOS */
+	font-display: fallback;
 }
 /* josefin-sans-700 - latin */
 @font-face {
@@ -55,6 +57,7 @@
 		/* Safari, Android, iOS */
 			url("/fonts/josefin/josefin-sans-v16-latin-700.svg#JosefinSans")
 			format("svg"); /* Legacy iOS */
+	font-display: fallback;
 }
 
 :root {
