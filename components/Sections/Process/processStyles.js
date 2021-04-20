@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import { motion } from "framer-motion"
+
 const changeover = "62em"
 const narrow = "42em"
 
@@ -81,7 +83,6 @@ export const Card_description = styled.p`
 	font-weight: 300;
 	font-size: 2.2rem;
 	margin-bottom: 1rem;
-
 	max-width: 80rem;
 
 	@media screen and (max-width: ${changeover}) {
