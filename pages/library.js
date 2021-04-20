@@ -9,7 +9,7 @@ const Main = styled.main`
 	grid-template-rows: auto auto;
 	padding: 1rem 0;
 	width: 95%;
-	margin: 0 auto;
+	margin: 7rem auto 0 auto;
 	max-width: 150rem;
 `
 const Summary = styled.p`

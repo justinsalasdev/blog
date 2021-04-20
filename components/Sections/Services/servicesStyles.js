@@ -1,14 +1,12 @@
 import styled from "styled-components"
 
-const titleIndex = 2
-
 export const Services = styled.section`
 	position: relative;
 	background-color: var(--black);
 `
 
 export const Title = styled.h2`
-	z-index: ${titleIndex};
+	z-index: var(--titleIndex);
 	color: var(--black);
 	font-size: 3rem;
 	position: absolute;
@@ -33,7 +31,7 @@ export const Segment = styled.li`
 export const Segment_title = styled.h3`
 	font-weight: 400;
 	text-transform: uppercase;
-	z-index: ${titleIndex};
+	z-index: var(--titleIndex);
 	padding-top: 1rem;
 	position: absolute;
 	top: 2rem;

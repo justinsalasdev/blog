@@ -5,6 +5,7 @@ import styled from "styled-components"
 import { Page } from "../components/Pages/pageStyles"
 
 const Main = styled.main`
+	margin-top: 7rem;
 	padding: 4rem 0;
 	display: flex;
 	flex-direction: column;

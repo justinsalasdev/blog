@@ -13,7 +13,7 @@ export const Main = styled.main`
 	width: 95%;
 	max-width: 85rem;
 	/* background-color: lightgreen; */
-	margin: 0 auto;
+	margin: 7rem auto 0 auto;
 	padding: 1rem;
 	padding-top: 4rem;
 `

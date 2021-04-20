@@ -85,6 +85,9 @@
 	--shadow1: rgba(84, 84, 84, 0.4);
 
 	--red: #e31a00;
+
+	--navIndex: 5;
+	--titleIndex: 2;
 }
 
 *,

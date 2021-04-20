@@ -1,33 +1,60 @@
 import styled from "styled-components"
 
-export const bp = "36em"
+const bp = "36em"
 
 export const NavBar = styled.div`
-	position: relative;
+	z-index: var(--navIndex);
+	width: 100%;
+	position: fixed;
+	padding: 1rem;
 	background-color: var(--black);
+`
+export const NavMenu = styled.button`
+	font-size: 4rem;
+	z-index: var(--navIndex);
+	display: none;
+	--webkit-appearance: none;
+	box-shadow: none;
+	border-style: solid;
+	border-color: transparent;
+	position: absolute;
+	outline: none;
+	color: var(--white);
+	background: transparent;
+	top: 0.2rem;
+	right: 1.5rem;
+
 	@media screen and (max-width: ${bp}) {
-		height: ${props => (props.shown ? "auto" : "6rem")};
+		display: block;
+	}
+
+	svg {
+		vertical-align: middle;
 	}
 `
 
 export const Nav = styled.nav`
 	width: 100%;
-	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+`
 
-	@media screen and (max-width: ${bp}) {
-		display: flex;
-		align-items: center;
-		padding: ${props => (props.shown ? "0" : "1.5rem 1rem 1rem 1rem ")};
+export const NavHome = styled.div`
+	@media screen and (min-width: ${bp}) {
+		display: none;
 	}
 `
+
 export const NavLinks = styled.ul`
-	padding: 1rem;
+	/* padding: 1rem; */
+
 	display: grid;
 	align-items: center;
-	grid-template-columns: 1fr auto;
+	grid-template-columns: 1fr auto; //separate home from rest of options
 
 	@media screen and (max-width: ${bp}) {
-		/* background: green; */
 		display: ${props => (props.shown ? "flex" : "none")};
 		flex-direction: column;
 		align-items: flex-start;
@@ -39,12 +66,6 @@ export const Divider = styled.div`
 	@media screen and (max-width: ${bp}) {
 		flex-direction: column;
 		align-items: flex-start;
-	}
-`
-
-export const NavHome = styled.li`
-	@media screen and (min-width: ${bp}) {
-		display: none;
 	}
 `
 
@@ -66,23 +87,5 @@ export const NavLink = styled.a`
 
 	svg {
 		display: inline-block;
-		/* margin-bottom: 0.5rem; */
-	}
-`
-
-export const NavMenu = styled.button`
-	display: none;
-	position: absolute;
-	background-color: var(--black);
-	outline: none;
-	border: 0.1rem double var(--white);
-	color: var(--white);
-	top: ${props => (props.shown ? "3rem" : "50%")};
-	right: 1.5rem;
-	transform: translateY(-50%);
-	font-family: "Josefin Sans";
-	padding: 1rem;
-	@media screen and (max-width: ${bp}) {
-		display: block;
 	}
 `

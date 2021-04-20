@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { MdMenu } from "react-icons/md"
 import {
 	NavBar,
 	Nav,
@@ -23,7 +24,7 @@ export default function Navigation() {
 	}
 
 	return (
-		<NavBar shown={navShown}>
+		<NavBar>
 			<Nav shown={navShown}>
 				{navShown ? null : ( //shows when mobile & navLinks are hidden
 					<NavHome shown={navShown}>
@@ -33,7 +34,7 @@ export default function Navigation() {
 					</NavHome>
 				)}
 
-				<NavLinks shown={navShown}>
+				<NavLinks shown={navShown} id="owned_navlinks">
 					<li>
 						<Link href="/">
 							<NavLink>Justin Salas RFP®</NavLink>
@@ -79,11 +80,12 @@ export default function Navigation() {
 				</NavLinks>
 			</Nav>
 			<NavMenu
-				shown={navShown}
 				type="button"
+				aria-expanded={navShown ? "true" : "false"}
+				aria-owns="owned_navlinks"
 				onClick={() => showNav(!navShown)}
 			>
-				{navShown ? "HIDE MENU" : "SHOW MENU"}
+				<MdMenu />
 			</NavMenu>
 		</NavBar>
 	)

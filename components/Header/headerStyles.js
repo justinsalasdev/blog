@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { fromLeft } from "./headerAnimations"
 export const Header = styled.header`
 	/* width: 50%; */
+	margin-top: 7rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
