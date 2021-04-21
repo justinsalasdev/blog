@@ -105,8 +105,14 @@ $narrow: 42em;
 //modifiers
 .right {
 	text-align: right;
+	@media screen and (max-width: $change-over) {
+		text-align: left;
+	}
 }
 
 .first {
 	order: 1;
+	@media screen and (max-width: $change-over) {
+		order: 3;
+	}
 }
