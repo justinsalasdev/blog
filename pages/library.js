@@ -36,8 +36,8 @@ export default function Library_() {
 				<ul className={d.books}>
 					{pictures.map((picture, index) => {
 						return (
-							<li className={d.book} key={index}>
-								<Cover src={`images/${picture}.jpg`} />
+							<li className={d[`book_${index}`]} key={index}>
+								<img className={d.cover} src={`images/${picture}.jpg`} />
 							</li>
 						)
 					})}
