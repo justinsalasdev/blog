@@ -1,4 +1,3 @@
-import { Green, Orange } from "../../helper-components/Highlights"
 import Link from "next/link"
 import { PopupText } from "react-calendly"
 

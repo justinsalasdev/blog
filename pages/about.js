@@ -1,25 +1,18 @@
 import Footer_ from "../components/Footer/Footer"
 import Navigation from "../components/Navigation/Navigation"
 import Person_ from "../components/Person/Person"
-import styled from "styled-components"
-import { Page } from "../components/Pages/pageStyles"
 
-const Main = styled.main`
-	margin-top: 7rem;
-	padding: 4rem 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-`
+import s from "../components/Pages/page.module.scss"
+import d from "../components/Pages/about.module.scss"
 
 export default function About_() {
 	return (
-		<Page>
+		<div className={s.page}>
 			<Navigation />
-			<Main>
+			<main className={d.main}>
 				<Person_ />
-			</Main>
+			</main>
 			<Footer_ />
-		</Page>
+		</div>
 	)
 }

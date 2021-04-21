@@ -9,13 +9,13 @@ export default function Services_() {
 					<h3 className={s.segment__title}>Investment Planning</h3>
 					<ul className={s.topics_40}>
 						<li className={s.topic_1}>
-							<Topic_title>Retirement</Topic_title>
+							<span className={s.topic__title}>Retirement</span>
 						</li>
 						<li className={s.topic_2}>
-							<Topic_title>Education</Topic_title>
+							<span className={s.topic__title}>Education</span>
 						</li>
 						<li className={s.topic_3}>
-							<Topic_title>Major purchase</Topic_title>
+							<span className={s.topic__title}>Major purchase</span>
 						</li>
 					</ul>
 				</li>

@@ -41,16 +41,17 @@
 	animation-fill-mode: backwards;
 }
 
-// @mixin generate-book-classes($num) {
-// 	@for $i from 0 through $num {
-// 		.book_#{$i} {
-// 			animation-delay: #{$i}unquote("s") / 10;
-// 		}
-// 		@debug #{$i}unquote("s") / 10;
-// 	}
-// }
+@mixin generate-book-classes($num) {
+	@for $i from 0 through $num {
+		.book_#{$i} {
+			@extend .book;
+			animation-delay: #{$i} / 10 + 0s;
+		}
+		@debug #{$i}/ 10 + 0s;
+	}
+}
 
-// @include generate-book-classes(17);
+@include generate-book-classes(17);
 
 .cover {
 	display: block;

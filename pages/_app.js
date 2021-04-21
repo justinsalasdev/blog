@@ -1,4 +1,4 @@
-import "../styles/globals.css"
+import "../styles/global.css"
 import Head from "next/head"
 import { Provider } from "next-auth/client"
 import { DefaultSeo } from "next-seo"
