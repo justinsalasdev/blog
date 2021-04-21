@@ -2,29 +2,25 @@ import { Green, Orange } from "../../helper-components/Highlights"
 import Link from "next/link"
 import { PopupText } from "react-calendly"
 
-import {
-	Header,
-	Header_link,
-	Header_title,
-	Header_action
-} from "./headerStyles"
+import s from "./header.module.scss"
 
 export default function Header_() {
 	return (
-		<Header>
-			<Header_title>
-				<Green>Planning</Green> makes it easier for you to make financial
-				decisions and keeps you on track to meet your <Orange>goals.</Orange>
-			</Header_title>
+		<header className={s.header}>
+			<div className={s.title}>
+				<span className={s.green}>Planning</span> makes it easier for you to
+				make financial decisions and keeps you on track to meet your{" "}
+				<span className={s.orange}>goals.</span>
+			</div>
 			<Link href="/articles/benefits">
-				<Header_link>More benefits of financial planning ⤍</Header_link>
+				<a className={s.link}>More benefits of financial planning ⤍</a>
 			</Link>
-			<Header_action>
+			<div className={s.action}>
 				<PopupText
 					text="Schedule a meeting 📆"
 					url="https://calendly.com/justinsalasrfp/financial-planning-engagement"
 				/>
-			</Header_action>
-		</Header>
+			</div>
+		</header>
 	)
 }

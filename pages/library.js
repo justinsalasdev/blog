@@ -3,6 +3,8 @@ import Navigation from "../components/Navigation/Navigation"
 import styled from "styled-components"
 import { keyframes } from "styled-components"
 import { Page } from "../components/Pages/pageStyles"
+import s from "../components/Pages/page.module.scss"
+import d from "../components/Pages/library.module.scss"
 
 const Main = styled.main`
 	display: grid;
@@ -86,24 +88,24 @@ const pictures = [
 
 export default function Library_() {
 	return (
-		<Page>
+		<div className={s.page}>
 			<Navigation />
-			<Main>
-				<Summary>
+			<main className={d.main}>
+				<p className={d.summary}>
 					Sharing with you some of the books that helped improve my knowledge in
 					personal finance.
-				</Summary>
-				<Books>
+				</p>
+				<ul className={d.books}>
 					{pictures.map((picture, index) => {
 						return (
-							<Book key={index} delay={index}>
+							<li className={d.book} key={index}>
 								<Cover src={`images/${picture}.jpg`} />
-							</Book>
+							</li>
 						)
 					})}
-				</Books>
-			</Main>
+				</ul>
+			</main>
 			<Footer_ />
-		</Page>
+		</div>
 	)
 }

@@ -1,16 +1,8 @@
 import Link from "next/link"
 import { MdMenu } from "react-icons/md"
-import {
-	NavBar,
-	Nav,
-	NavLinks,
-	NavLink,
-	NavMenu,
-	NavHome,
-	Divider
-} from "./navigationStyles"
 import { signIn, signOut, useSession } from "next-auth/client"
 import { useState } from "react"
+import s from "./navigation.module.scss"
 
 export default function Navigation() {
 	const [navShown, showNav] = useState(false)
@@ -24,44 +16,47 @@ export default function Navigation() {
 	}
 
 	return (
-		<NavBar>
-			<Nav shown={navShown}>
+		<div className={s.bar}>
+			<nav className={s.nav}>
 				{navShown ? null : ( //shows when mobile & navLinks are hidden
-					<NavHome shown={navShown}>
+					<div className={s.home}>
 						<Link href="/">
-							<NavLink>Justin Salas RFP®</NavLink>
+							<a className={s.link}>Justin Salas RFP®</a>
 						</Link>
-					</NavHome>
+					</div>
 				)}
 
-				<NavLinks shown={navShown} id="owned_navlinks">
+				<ul
+					className={`${s.links} ${navShown ? s.links_shown : s.links_hidden}`}
+					id="owned_navlinks"
+				>
 					<li>
 						<Link href="/">
-							<NavLink>Justin Salas RFP®</NavLink>
+							<a className={s.link}>Justin Salas RFP®</a>
 						</Link>
 					</li>
 
-					<Divider>
+					<div className={s.divider}>
 						{session && (
 							<li>
 								<Link href="/user/dashboard">
-									<NavLink>
+									<a className={s.link}>
 										<CgProfile />
 										DASHBOARD
-									</NavLink>
+									</a>
 								</Link>
 							</li>
 						)}
 						<li>
 							<Link href={session ? "/user/profile" : "/about"}>
-								<NavLink>{session ? "PROFILE" : "ABOUT"}</NavLink>
+								<a className={s.link}>{session ? "PROFILE" : "ABOUT"}</a>
 							</Link>
 						</li>
 
 						{!session && (
 							<li>
 								<Link href="/library">
-									<NavLink>LIBRARY</NavLink>
+									<a className={s.link}>LIBRARY</a>
 								</Link>
 							</li>
 						)}
@@ -72,21 +67,22 @@ export default function Navigation() {
 						</li> */}
 
 						<li>
-							<NavLink onClick={setAction(session)}>
+							<a className={s.link} onClick={setAction(session)}>
 								{session ? "LOGOUT" : "LOGIN"}
-							</NavLink>
+							</a>
 						</li>
-					</Divider>
-				</NavLinks>
-			</Nav>
-			<NavMenu
+					</div>
+				</ul>
+			</nav>
+			<button
+				className={s.menu}
 				type="button"
 				aria-expanded={navShown ? "true" : "false"}
 				aria-owns="owned_navlinks"
 				onClick={() => showNav(!navShown)}
 			>
 				<MdMenu />
-			</NavMenu>
-		</NavBar>
+			</button>
+		</div>
 	)
 }

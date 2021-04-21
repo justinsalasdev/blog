@@ -1,0 +1,64 @@
+@keyframes from-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-5%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.main {
+	display: grid;
+	grid-template-rows: auto auto;
+	padding: 1rem 0;
+	width: 95%;
+	margin: 7rem auto 0 auto;
+	max-width: 150rem;
+}
+
+.summary {
+	text-align: center;
+	padding: 2rem;
+	border-bottom: 0.1rem solid var(--gray);
+	margin-bottom: 2rem;
+}
+
+.books {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+	align-items: center;
+	grid-auto-flow: row dense;
+}
+
+.book {
+	margin: 1rem;
+	box-shadow: 0.2rem 0.2rem 0.8rem var(--shadow);
+	animation: from-left 2s cubic-bezier(0, 1, 0, 1);
+	animation-fill-mode: backwards;
+}
+
+// @mixin generate-book-classes($num) {
+// 	@for $i from 0 through $num {
+// 		.book_#{$i} {
+// 			animation-delay: #{$i}unquote("s") / 10;
+// 		}
+// 		@debug #{$i}unquote("s") / 10;
+// 	}
+// }
+
+// @include generate-book-classes(17);
+
+.cover {
+	display: block;
+	width: 100%;
+	/* height: 100%; */
+	object-fit: stretch;
+	:hover {
+		background-color: green;
+		z-index: -1;
+	}
+}

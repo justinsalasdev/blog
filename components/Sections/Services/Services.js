@@ -1,83 +1,69 @@
-import {
-	Services,
-	Title,
-	Segments,
-	Segment,
-	Segment_title,
-	Segment_title2,
-	Topics,
-	Topics2,
-	Topics3,
-	Topic,
-	Topic_title,
-	Topic_title2,
-	Topic_title3
-} from "./servicesStyles"
+import s from "./service.module.scss"
 
 export default function Services_() {
 	return (
-		<Services>
-			<Title>SERVICES</Title>
-			<Segments>
-				<Segment>
-					<Segment_title>Investment Planning</Segment_title>
-					<Topics h={40}>
-						<Topic bg={1}>
+		<section className={s.services}>
+			<h2 className={s.title}>SERVICES</h2>
+			<ul className={s.segments}>
+				<li className={s.segment}>
+					<h3 className={s.segment__title}>Investment Planning</h3>
+					<ul className={s.topics_40}>
+						<li className={s.topic_1}>
 							<Topic_title>Retirement</Topic_title>
-						</Topic>
-						<Topic bg={2}>
+						</li>
+						<li className={s.topic_2}>
 							<Topic_title>Education</Topic_title>
-						</Topic>
-						<Topic bg={3}>
+						</li>
+						<li className={s.topic_3}>
 							<Topic_title>Major purchase</Topic_title>
-						</Topic>
-					</Topics>
-				</Segment>
-				<Segment>
-					<Segment_title2>Insurance Planning</Segment_title2>
-					<Topics h={30}>
-						<Topic bg={4}>
-							<Topic_title2>Risk</Topic_title2>
-						</Topic>
-						<Topic bg={5}>
-							<Topic_title2>Size</Topic_title2>
-						</Topic>
-						<Topic bg={6}>
-							<Topic_title2>Type</Topic_title2>
-						</Topic>
-						<Topic bg={7}>
-							<Topic_title2>Brand</Topic_title2>
-						</Topic>
-					</Topics>
-				</Segment>
-				<Segment>
-					<Topics h={40}>
-						<Topic bg={8}>
-							<Topic_title3>Estate Planning</Topic_title3>
-						</Topic>
-						<Topic bg={9}>
-							<Topic_title3>Tax Planning</Topic_title3>
-						</Topic>
-					</Topics>
-				</Segment>
-				<Segment>
-					<Segment_title2>Management</Segment_title2>
-					<Topics h={30}>
-						<Topic bg={10}>
-							<Topic_title2>Monitor</Topic_title2>
-						</Topic>
-						<Topic bg={11}>
-							<Topic_title2>Rebalance</Topic_title2>
-						</Topic>
-						<Topic bg={12}>
-							<Topic_title2>Allocate</Topic_title2>
-						</Topic>
-						<Topic bg={13}>
-							<Topic_title2>Review</Topic_title2>
-						</Topic>
-					</Topics>
-				</Segment>
-			</Segments>
-		</Services>
+						</li>
+					</ul>
+				</li>
+				<li className={s.segment}>
+					<h3 className={s.segment__title_2}>Insurance Planning</h3>
+					<ul className={s.topics_30}>
+						<li className={s.topic_4}>
+							<span className={s.topic__title_2}>Risk</span>
+						</li>
+						<li className={s.topic_5}>
+							<span className={s.topic__title_2}>Size</span>
+						</li>
+						<li className={s.topic_6}>
+							<span className={s.topic__title_2}>Type</span>
+						</li>
+						<li className={s.topic_7}>
+							<span className={s.topic__title_2}>Brand</span>
+						</li>
+					</ul>
+				</li>
+				<li className={s.segment}>
+					<ul className={s.topics_40}>
+						<li className={s.topic_8}>
+							<span className={s.topic__title_3}>Estate Planning</span>
+						</li>
+						<li className={s.topic_9}>
+							<span className={s.topic__title_3}>Tax Planning</span>
+						</li>
+					</ul>
+				</li>
+				<li className={s.segment}>
+					<h3 className={s.segment__title_2}>Management</h3>
+					<ul className={s.topics_30}>
+						<li className={s.topic_10}>
+							<span className={s.topic__title_2}>Monitor</span>
+						</li>
+						<li className={s.topic_11}>
+							<span className={s.topic__title_2}>Rebalance</span>
+						</li>
+						<li className={s.topic_12}>
+							<span className={s.topic__title_2}>Allocate</span>
+						</li>
+						<li className={s.topic_13}>
+							<span className={s.topic__title_2}>Review</span>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
 	)
 }

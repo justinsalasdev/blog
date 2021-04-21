@@ -1,0 +1,115 @@
+@import "./animations";
+
+$b_photo: 61.86em;
+
+.person {
+	width: 95%;
+	max-width: 130rem;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	/* box-shadow: 0.2rem 0.2rem 0.8rem var(--shadow); */
+	border-bottom: 0.1rem solid var(--gray);
+	border-top: 0.1rem solid var(--gray);
+	animation: from-left 2s cubic-bezier(0, 1, 0, 1);
+	animation-fill-mode: backwards;
+
+	@media screen and (max-width: $b_photo) {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
+}
+
+.picture {
+	width: 30rem;
+	object-fit: cover;
+
+	@media screen and (max-width: 90em) {
+		height: 60rem;
+	}
+
+	@media screen and (max-width: $b_photo) {
+		height: 30rem;
+		justify-self: center;
+		object-position: 50% 20%;
+		border-radius: 50%;
+		margin: 2rem 0;
+	}
+
+	@media screen and (max-width: 24em) {
+		border-radius: 0;
+		margin: 0;
+		width: 100%;
+	}
+}
+
+.desc {
+	padding-bottom: 1rem;
+	@media screen and (max-width: $b_photo) {
+		border: 0;
+	}
+
+	&__prag {
+		padding: 0.3rem 1.5rem;
+		text-align: justify;
+		text-indent: 3rem;
+	}
+
+	&__link {
+		color: var(--blue);
+		cursor: pointer;
+		:hover {
+			color: var(--blue2);
+		}
+
+		:active {
+			color: var(--green);
+		}
+	}
+}
+
+.credit {
+	/* margin-bottom: 0.7rem; */
+	background-color: #000740;
+	/* margin-bottom: 0.5rem; */
+	/* padding: 1rem; */
+	height: 6rem;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+
+	@media screen and (max-width: 36.2em) {
+		height: auto;
+		padding: 1rem;
+	}
+
+	&__icon {
+		width: 6rem;
+		height: 6rem;
+	}
+
+	&__desc {
+		padding-left: 1rem;
+	}
+
+	&__src {
+		color: var(--blue4);
+		display: block;
+		font-size: 1.5rem;
+	}
+}
+
+//modifiers
+.dark {
+	color: var(--blue2);
+}
+.white {
+	color: var(--white);
+}
+
+.blue2 {
+	color: var(--blue2);
+}
+
+.rfp {
+	background-color: var(--white1);
+}

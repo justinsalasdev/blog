@@ -1,60 +1,52 @@
 import Link from "next/link"
-
-import { White, Blue2 } from "../../helper-components/Highlights"
-import {
-	Person,
-	Picture,
-	Description,
-	Description_prag,
-	Description_link,
-	Credentials,
-	Credential_list,
-	Credential,
-	Credential_rfp,
-	Credential_icon,
-	Credential_description,
-	Credential_src
-} from "./personStyles"
+import s from "./person.module.scss"
 
 export default function Person_() {
 	return (
-		<Person>
-			<Picture src="images/me.jpg" />
+		<section className={s.person}>
+			<img className={s.picture} src="images/me.jpg" />
 
-			<Description>
-				<Credentials>
-					<Credential_list>
-						<Credential>
-							<Credential_icon src="icons/wmc.png" />
-							<Credential_description>
-								<White>Certified Wealth and Estate Planner</White>
-								<Credential_src
+			<div className={s.desc}>
+				<div>
+					<ul>
+						<li className={s.credit}>
+							<img className={s.credit__icon} src="icons/wmc.png" />
+							<p className={s.credit__desc}>
+								<span className={s.white}>
+									Certified Wealth and Estate Planner
+								</span>
+								<a
+									className={s.credit__src}
 									awp
 									href="https://www.wealthcenter.org/"
 									target="_blank"
 								>
 									Wealth Management Center for Communication and Research Inc.
-								</Credential_src>
-							</Credential_description>
-						</Credential>
-						<Credential_rfp>
-							<Credential_icon src="icons/rfp.png" />
-							<Credential_description>
-								<Blue2>Registered Financial Planner</Blue2>
-								<Credential_src href="https://rfp.ph/" target="_blank">
+								</a>
+							</p>
+						</li>
+						<li className={`${s.credit} ${s.rfp}`}>
+							<img className={s.credit__icon} src="icons/rfp.png" />
+							<p className={s.credit__desc}>
+								<span className={s.blue2}>Registered Financial Planner</span>
+								<a
+									className={`${s.credit__src} ${s.blue2}`}
+									href="https://rfp.ph/"
+									target="_blank"
+								>
 									Registered Financial Planners Institute
-								</Credential_src>{" "}
-							</Credential_description>
-						</Credential_rfp>
-					</Credential_list>
-				</Credentials>
-				<Description_prag>
+								</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<p className={s.desc__prag}>
 					Justin Salas is an advocate of personal financial planning. In the
 					last 6 years, he has applied its principles to maintain and further
 					improve his financial wellness. He believes that only through holistic
 					plans can people truly find purpose for their hard-earned money.
-				</Description_prag>
-				<Description_prag>
+				</p>
+				<p className={s.desc__prag}>
 					The fact that financial planning is not yet a popular nor attractive
 					undertaking, is not an obstacle for him to consistently reach out to
 					people to introduce the financial planning process and its benefits.
@@ -63,20 +55,20 @@ export default function Person_() {
 					solutions for every unique client goals and situation. He continues to
 					improve his expertise on the subject to be able to always provide
 					sound and up to date recommendations to his clients.
-				</Description_prag>
-				<Description_prag>
+				</p>
+				<p className={s.desc__prag}>
 					He graduated Bachelor of Science in Electrical Engineering from Mapua
 					University. His curiosity and eagerness to explore new fields led him
 					to the acquisition of valuable knowledge and skills in finance,
 					computer hardware, networking, and web programming. He likes to read
 					books or play chess in his free time while enjoying a cup of tea.{" "}
 					<Link href="/library">
-						<Description_link>
+						<a className={s.desc__link}>
 							Have a look at some of the books that he likes &rarr;
-						</Description_link>
+						</a>
 					</Link>
-				</Description_prag>
-			</Description>
-		</Person>
+				</p>
+			</div>
+		</section>
 	)
 }

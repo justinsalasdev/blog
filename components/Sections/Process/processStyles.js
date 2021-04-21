@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { motion } from "framer-motion"
 
 const changeover = "62em"
 const narrow = "42em"

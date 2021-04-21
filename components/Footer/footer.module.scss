@@ -1,6 +1,4 @@
-import styled from "styled-components"
-
-export const Footer = styled.footer`
+.footer {
 	font-weight: 300;
 	font-size: 1.5rem;
 
@@ -12,22 +10,24 @@ export const Footer = styled.footer`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-`
+}
 
-export const Message = styled.p`
+.message {
 	display: inline-block;
 	padding: 0.2rem;
 	/* border-bottom: 1px solid white; */
 	margin: auto;
-`
+}
 
-export const List = styled.ul`
+.list {
 	display: flex;
 	align-items: center;
-`
-export const Item = styled.li``
+}
 
-export const Link = styled.a`
+.item {
+}
+
+.link {
 	display: block;
 	padding: 0.5rem;
 	font-size: 3rem;
@@ -35,4 +35,4 @@ export const Link = styled.a`
 	svg {
 		vertical-align: middle;
 	}
-`
+}

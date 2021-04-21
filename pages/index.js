@@ -3,8 +3,8 @@ import Navigation from "../components/Navigation/Navigation"
 import Header_ from "../components/Header/Header"
 import Footer_ from "../components/Footer/Footer"
 import Process_ from "../components/Sections/Process/Process"
-import { Page } from "../components/Pages/pageStyles"
 import Services_ from "../components/Sections/Services/Services"
+import s from "../components/Pages/page.module.scss"
 
 const Main = styled.main`
 	display: grid;
@@ -15,7 +15,7 @@ const Main = styled.main`
 export default function Index_() {
 	return (
 		<>
-			<Page>
+			<div className={s.page}>
 				<Navigation />
 				<Main>
 					<Header_ />
@@ -23,7 +23,7 @@ export default function Index_() {
 					<Services_ />
 				</Main>
 				<Footer_ />
-			</Page>
+			</div>
 		</>
 	)
 }
