@@ -92,10 +92,6 @@ $narrow: 42em;
 	max-width: 8 0rem;
 	order: 3;
 	text-align: left;
-	@media screen and (max-width: $change-over) {
-		order: 3;
-		text-align: left;
-	}
 
 	@media screen and (max-width: $narrow) {
 		padding: 0 1rem 1rem 1rem;
